@@ -1,46 +1,5 @@
 /*  FOOTER  */
 
 footer{
-	padding-top: 60px;
-	border-top: 1px solid $lineColor;
-	.container{
-		@include clearfix;
-		.item{
-			width: 25%;
-			float: left;
-			.title{
-				font-size: 24px;
-				font-weight: 300;
-				margin-bottom: 20px;
-			}
-			.address{
-				line-height: 30px;
-				span{
-					display: inline-block;
-					margin-right: 20px;
-				}
-			}
-			a{
-				display: block;
-				line-height: 30px;
-			}
-		}
-	}
-	.foot{
-		margin-top: 60px;
-		line-height: 52px;
-		background: #eef1f4;
-		.left{
-			float: left;
-			line-height: 50px;
-		}
-		.right{
-			float: right;
-			img{
-				float: left;
-				margin-left: 20px;
-			}
-		}
-	}
 }
 

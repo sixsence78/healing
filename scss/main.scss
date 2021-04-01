@@ -11,438 +11,112 @@
 @import "modal";
 
 
-@mixin round-btn{
-	
-	background: $point;
-	color: #fff;
-	line-height: 35px;
-	padding: 0 30px;
-	border-radius: 15px;
-	display: inline-block;
-	
+#contents{
+    .grid-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .wrap{
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            .title-wrap{
+                display: flex;
+                align-items: flex-end;
+                h2{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #454545;
+                    position: relative;
+                    letter-spacing: -0.68px;
+                    &:after{
+                        display: block;
+                        width: 100%;
+                        height: 13px;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background: rgba($point,.3);
+                        z-index: -1;
+                    }
+                    
+                }
+                p{
+                    font-size: 14px;
+                    letter-spacing: -0.48px;
+                    color: #767676;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    border-left: 1px solid #dedede;
+                }
+            }
+            .items{
+                width: 100%;
+                display: flex;
+                margin-top: 30px;
+                .item{
+                    width: calc((100% - 90px) / 4);
+                    margin-left: 30px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    img{width: 100%}
+                    .title{
+                        font-size: 18px;
+                        color: #000;
+                        letter-spacing: -0.42px;
+                        font-weight: 500;
+                        margin-top: 15px;
+                        @include ellipsis();
+                    }
+                    .subs{
+                        margin-top: 10px;
+                        font-size: 16px;
+                        letter-spacing: -0.25px;
+                        color: #454545;
+                        line-height: 24px;
+                        @include multiline_ellipsis(2);
+                    }
+                    .date{
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding-top: 30px;
+                        position: relative;
+                        &:before{
+                            display: block;
+                            width: 10px;
+                            height: 2px;
+                            content: "";
+                            background: #000;
+                            position: absolute;
+                            top: 14px;
+                        }
+                    }
+                    .btn-resi{
+                        width: 100%;
+                        border-radius: 8px;
+                        background: #dedede;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 16px;
+                        color: #767676;
+                        margin-top: 30px;
+                        font-weight: 500;
+                        a{
+                            display: block;
+                            width: 100%;
+                            color: #fff;
+                            background: $primary;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
-h2{
-	font-size: 40px;
-	font-weight: 100;
-	color: #333;
-	strong{
-		font-size: 40px;
-		font-weight: 500;
-		color: #333;
-	}
-}
-
-.visual{
-	width: 100%;
-	height: 699px;
-	position: relative;
-	.ui-wrap{
-		position: absolute;
-		left: 0;
-		bottom: 40px;
-		text-align: center;
-		z-index: 1;
-		width: 100%;
-		.ui{
-			display: inline-block;
-			vertical-align: top;
-			li{
-				display: inline-block;
-				margin: 0 5px;
-				button{
-					width: 20px;
-					height: 20px;
-					border: 4px solid #fff;
-					text-indent: -9999px;
-					background: transparent;
-					border-radius: 100%;
-					&.on{
-						background: #fff;
-					}
-				}
-				
-			}
-		}
-		.play{
-			width: 20px;
-			height: 20px;
-			display: inline-block;
-			text-indent: -9999px;
-			background: url(../_images/main/visual_play.png) no-repeat left top;
-			border-radius: 100%;
-			vertical-align: top;
-			margin-left: 5px;
-			&.on{
-				background-position: left bottom;
-			}
-		}
-	}
-	.item{
-		height: 699px;
-		background-size: cover;
-		background-position: center;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		a{
-			display: block;
-			width: 100%;
-			height: 100%;
-			text-indent: -9999px;
-		}
-	}
-}
-
-.step{
-	text-align: center;
-	padding: 60px 0;
-	.tab{
-		button{
-			width: 166px;
-			line-height: 41px;
-			border: 2px solid #cecece;
-			text-align: center;
-			color: #888;
-			font-size: 18px;
-			margin: 0 5px;
-			border-radius: 50px;
-			background: #fff;
-			&.on{
-				border-color: $primary;
-				color: $primary;
-			}
-		}
-	}
-	.date1{
-		margin: 35px auto 0;
-		max-width: 1200px;
-		@include clearfix;
-		.d1{
-			width: 960px;
-			background: url(../_images/main/step_arrow.png) no-repeat center;
-			margin-left: 40px;
-			float: left;
-			margin-bottom: 20px;
-			span{
-				display: inline-block;
-				color: $primary;
-				background: #fff;
-				padding: 0 20px;
-			}
-		}
-		.d2{
-			float: left;
-			width: 200px;
-			margin-bottom: 20px;
-			color: $point;
-		}
-	}
-}
-
-.intro{
-	background: #06204b;
-	padding: 60px 0;
-	text-align:center;
-	h2{
-		color: #fff;
-		strong{
-			color: #fff;
-		}
-	}
-	.container{
-		@include clearfix;
-		.item{
-			float: left;
-			width: 25%;
-			margin-top: 30px;
-			height: 400px;
-			padding-top: 40px;
-			@include box-sizing(border-box);
-			@for $i from 1 through 4{
-				&:nth-child(#{$i}){
-					background: url(../_images/main/intro#{$i}.jpg) no-repeat center;
-					@if $i % 2 == 0 {padding-top: 240px;}
-				}
-			}
-			.title{
-				font-size: 24px;
-				color: #333;
-				font-weight: 700;
-			}
-			.text{
-				margin-top: 10px;
-				line-height: 18px;
-			}
-			a{
-				@include round-btn;
-				margin-top: 20px;
-			}
-		}
-	}
-}
-
-.univ{
-	padding: 60px 0 180px;
-	h2{
-		text-align: center;
-	}
-	.links{
-		margin-top: 40px;
-		@include clearfix;
-		.item{
-			float: left;
-			width: 20%;
-			line-height: 100px;
-			@for $i from 1 through 5{
-				&:nth-child(#{$i}){
-					background: url(../_images/main/ico#{$i}.jpg) no-repeat left top;
-				}
-			}
-			a{
-				display: block;
-				height: 100%;
-				font-size: 22px;
-				font-weight: 100;
-				padding-left: 110px;
-				letter-spacing: -2px;
-			}
-		}
-	}
-	.wrap{
-		margin-top: 40px;
-		@include clearfix;
-		.press{
-			float: left;
-			width: 600px;
-			h3{
-				font-size: 24px;
-			}
-			.press-wrap{
-				margin-top: 20px;
-				padding-bottom: 30px;
-				margin-bottom: 30px;
-				border-bottom: 1px solid $lineColor;
-				@include clearfix;
-				img{
-					float: left;
-					display: block;
-				}
-				.text-wrap{
-					float: left;
-					margin-left: 40px;
-					width: 260px;
-					.title{
-						font-size: 16px;
-						font-weight: 500;
-						line-height: 22px;
-						width: 100%;
-						height: 46px;
-						@include  multiline_ellipsis(2);
-					}
-					.text{
-						margin-top: 20px;
-						line-height: 22px;
-						height: 44px;
-						@include  multiline_ellipsis(2);
-					}
-					a{
-						@include round-btn;
-						margin-top: 20px;
-					}
-				}
-			}
-			.list{
-				margin-bottom: 20px;
-				@include clearfix;
-				a{
-					float: left;
-					font-size: 16px;
-					color: #333;
-					display: block;
-					width: 480px;
-					height: 18px;
-					@include ellipsis();
-				}
-				.date{
-					float: right;
-				}
-			}
-		}
-		.movie{
-			float: right;
-		}
-	}
-}
-
-.dept{
-	background: #eef1f4;
-	.container{
-		position: relative;
-	}
-	.image{
-		position: absolute;
-		left: 0;
-		top: -120px;
-		margin-left: -30px;
-		width: 100%;
-		a{
-			float: left;
-			display: block;
-			margin-left: 30px;
-			width: calc((100% - 90px) / 3);
-			height: 240px;
-			text-align: center;
-			padding-top: 80px;
-			@include box-sizing(border-box);
-			@for $i from 1 through 3{
-				&:nth-child(#{$i}){
-					background: url(../_images/main/univ_image#{$i}.jpg) no-repeat center;
-				}
-			}
-			.title{
-				color: #fff;
-				border-top: 1px solid #fff;
-				border-bottom: 1px solid #fff;
-				display: inline-block;
-				padding: 5px 0;
-			}
-			.text{
-				margin-top: 15px;
-				color: #fff;
-				line-height: 24px;
-			}
-			&:nth-child(2){
-				.title{
-					color: $point;
-					border-top: 1px solid $point;
-					border-bottom: 1px solid $point;
-				}
-				.text{
-					color: #666;
-				}
-			}
-		}
-	}
-	.dept-wrap{
-		padding-top: 180px;
-		padding-bottom: 60px;
-		h2{
-			text-align: left;
-		}
-		.wrap{
-			margin-top: 40px;
-			@include clearfix;
-			dl{
-				float: left;
-				width: 25%;
-				dt{
-					font-size: 24px;
-					font-weight: 700;
-					color: $primary;
-					margin-bottom: 20px;
-				}
-				dd{
-					line-height: 25px;
-					a{
-						display: block;
-						
-					}
-				}
-			}
-		}
-	}
-}
-
-.notice{
-	padding: 60px 0;
-	.container{
-		@include clearfix;	
-	}
-	.notice-wrap{
-		float: left;
-		h2{
-			.btn-more{
-				display: inline-block;
-				margin-left: 10px;
-				width: 20px;
-				height: 40px;
-				background: url(../_images/main/notice_more.jpg) no-repeat center;
-				text-indent: -9999px;
-				vertical-align: top;
-			}
-		}
-		.list-wrap{
-			margin-top: 30px;
-			width: 640px;
-			@include clearfix;
-			.list{
-				float: left;
-				width: 300px;
-				border-right: 1px solid $lineColor;
-				@include box-sizing(border-box);
-				a{
-					display: block;
-					font-size: 16px;
-					color: #333;
-					width: 90%;
-					height: 44px;
-					line-height: 22px;
-					font-weight: 700;
-					@include  multiline_ellipsis(2);
-				}
-				.date{
-					margin-top: 20px;
-				}
-				&:nth-child(2){
-					margin-left: 40px;
-					border: none;
-				}
-			}
-		}
-	}
-	.cs{
-		width: 532px;
-		height: 160px;
-		float: right;
-		background: url(../_images/main/cs_bg.jpg) no-repeat center;
-		padding: 40px;
-		@include box-sizing(border-box);
-		p{
-			color: #fff;
-			font-size: 24px;
-			font-weight: 100;
-			strong{
-				color: #fff;
-				font-size: 24px;
-			}
-		}
-		.cs-wrap{
-			margin-top: 20px;
-			.left{
-				color: #fff;
-				float: left;
-				width: 170px;
-				line-height: 22px;
-				border-right: 1px solid #3286b6;
-				strong{
-					color: #fff;
-					display: inline-block;
-					width: 70px;
-				}
-			}
-			.right{
-				float: left;
-				margin-left: 20px;
-				color: #fff;
-				font-weight: 700;
-				font-size: 38px;
-			}
-		}
-	}
-}
-
 
 
 

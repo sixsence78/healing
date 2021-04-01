@@ -13,13 +13,13 @@ $(function(){
 	////////////////////     SKIP NAVI     ////////////////////
 	
 	/*   SKIP NAVI 로드   */
-	$("#skip-nav").load('../_inc/skip.html');
+	//$("#skip-nav").load('../_inc/skip.html');
 	
 	
 	////////////////////     HEADER     ////////////////////
 	
 	/*   HEADER 로드   */
-	$("header").load('../_inc/gnb.html',function(){
+	//$("header").load('../_inc/gnb.html',function(){
 		 LNBinit();
 	});
 	
@@ -41,7 +41,7 @@ $(function(){
 	////////////////////     FOOTER     ////////////////////
 	
 	/*   FOOTER 로드   */
-	$("footer").load('../_inc/footer.html');
+	//$("footer").load('../_inc/footer.html');
 	
 	////////////////////     LNB     ////////////////////
 	
