@@ -1,0 +1,210 @@
+/*  GNB  */
+
+header{
+	
+	.global{
+		height: 35px;
+		background: #092d67;
+		.family{
+			float: left;
+			a{
+				display: block;
+				width: 120px;
+				line-height: 35px;
+				margin-right: 1px;
+				background: #10223f;
+				color: #fff;
+				font-weight: 700;
+				text-align: center;
+				float: left;
+				&.on{
+					background: #fff;
+					color: $primary;
+				}
+			}
+		}
+		.util{
+			float: right;
+			.login{
+				background: $point;
+				display: block;
+				width: 77px;
+				color: #fff;
+				text-align: center;
+				float: left;
+				line-height: 35px;
+			}
+			.search{
+				position: relative;
+				float: left;
+				.btn-search{
+					width: 35px;
+					height: 35px;
+					background: url(../_images/common/hearder_search.png) no-repeat top center;
+					border-right: 1px solid #224276;
+					text-indent: -9999px;
+					&.on{
+						background-position: bottom center;
+						background-color: #051b3f;
+					}
+				}
+				.search-wrap{
+					position: absolute;
+					width: 269px;
+					height: 76px;
+					background: #093479;
+					top: 35px;
+					right: 0;
+					display: none;
+					z-index: 1;
+					.wrap{
+						border-bottom: 1px solid #fff;
+						width: 229px;
+						margin: 15px auto;
+						@include clearfix;
+						input[type="text"]{
+							border: none;
+							height: 35px;
+							width: 194px;
+							float: left;
+							background: transparent;
+							color: #fff;
+							text-indent: 0;
+						}
+						.btn-form{
+							width: 35px;
+							height: 35px;
+							background: url(../_images/common/header_form_search.png) no-repeat center;
+							text-indent: -9999px;
+						}
+					}
+				}
+			}
+			.sitemap{
+				width: 35px;
+				height: 35px;
+				background: url(../_images/common/header_sitemap.png) no-repeat center;
+				border-right: 1px solid #224276;
+				text-indent: -9999px;
+				float: left;
+			}
+			.language{
+				width: 135px;
+				float: left;
+				position: relative;
+				button{
+					width: 100%;
+					color: #fff;
+					background: url(../_images/common/header_arrow.png) no-repeat right top;
+					line-height: 35px;
+					text-align: left;
+					text-indent: 15px;
+					height:35px;
+					&.on{
+						background-position: right bottom;
+					}
+				}
+				.lan-wrap{
+					position: absolute;
+					top: 35px;
+					left: 0;
+					width: 100%;
+					height: 35px;
+					display: none;
+					z-index: 2;
+					a{
+						display: block;
+						width: 100%;
+						line-height: 35px;
+						background: $primary;
+						color: #fff;
+						text-indent: 15px;
+						border-bottom: 1px solid #324e79;
+						&:hover{
+							background: $point;
+						}
+					}
+				}
+			}
+			.ribbon-close{
+				width: 105px;
+				text-align: left;
+				text-indent: 15px;
+				background: url(../_images/common/header_arrow.png) no-repeat right bottom #051b3f;
+				color: #fff;
+				line-height: 35px;
+				&.on{
+					background-position: right top;
+				}
+			}
+		}
+	}
+	
+	.menu-wrap{
+		position: relative;
+		.container-full{
+			border-bottom: 1px solid $lineColor;
+			.container{
+				@include clearfix;
+			}
+		}
+		h1{
+			float: left;
+			width: 180px;
+			height: 75px;
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				text-indent: -9999px;
+				background: url(../_images/common/ci.png) no-repeat left top;
+			}
+		}
+		#gnb{
+			float: right;
+			>li{
+				float: left;
+				margin-left: 50px;
+				>a{
+					line-height: 75px;
+					font-size: 18px;
+					font-weight: 700;
+					color: #333;
+				}
+				.bg{
+					position: absolute;
+					background: #06204b;
+					z-index: 1;
+					left: 0;
+					width: 100%;
+					padding: 50px 0;
+					display: none;
+					.layout{
+						display: table;
+						width: 100%;
+						>li{
+							display: table-cell;
+							width: 10%;
+							>a{
+								font-size: 18px;
+								font-weight: 500;
+								color: $point;
+							}
+							ul{
+								margin-top: 15px;
+								li a{
+									line-height: 25px;
+									color: #fff;
+									font-weight: 100;
+								}
+								&.d3{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
