@@ -19,22 +19,23 @@ $(function(){
 	////////////////////     HEADER     ////////////////////
 	
 	/*   HEADER 로드   */
-	//$("header").load('../_inc/gnb.html',function(){
+	/*$("header").load('../_inc/gnb.html',function(){
 		 LNBinit();
-	});
+	});*/
 	
 	/*     WEB     */
-	/*$(document).on("mouseover","header .menu dt",function(){
+	$(document).on("mouseover",".gnb dl",function(){
 		
-			$("header .menu div, header .text-wrap").stop().slideDown(500,"easeInOutExpo");
+       //alert("A");
+       $(".gnb div").hide(); $(this).find("div").show();
 		
 	});
 	
 	$(document).on("mouseleave","header",function(){
 		
-			$("header .menu div, header .text-wrap").stop().slideUp(500,"easeInOutExpo");
+			$(".gnb div").hide();
 		
-	});*/
+	});
 	
 	
 	

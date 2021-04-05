@@ -146,6 +146,16 @@ header .util-wrapper .wrap .site { display: flex; }
 header .util-wrapper .wrap .site a { width: 120px; line-height: 30px; background-color: rgba(1, 44, 61, 0.1); font-size: 14px; color: #767676; letter-spacing: -0.57px; text-align: center; }
 header .util-wrapper .wrap .site a.on { background: #012c3d; color: #fff; font-weight: 500; }
 header .util-wrapper .wrap .util a { color: #767676; padding: 0 10px; line-height: 30px; }
+header .gnb-wrapper { width: 100%; display: flex; justify-content: center; }
+header .gnb-wrapper .wrap { width: 100%; padding: 0 15px; max-width: 1200px; display: flex; align-items: flex-end; }
+header .gnb-wrapper .wrap h1 { width: 150px; height: 80px; }
+header .gnb-wrapper .wrap h1 a { display: block; width: 100%; height: 100%; background: url("../_images/common/ci.png") no-repeat 0 0/cover; }
+header .gnb-wrapper .wrap .gnb { display: flex; margin-left: 20px; }
+header .gnb-wrapper .wrap .gnb dl { margin-left: 50px; position: relative; }
+header .gnb-wrapper .wrap .gnb dl dt a { display: block; width: 100%; height: 100%; font-size: 18px; color: #000; font-weight: 500; padding-bottom: 20px; }
+header .gnb-wrapper .wrap .gnb dl div { display: none; position: absolute; left: -20px; top: 30px; background: #012c3d; width: 200px; padding: 20px 0; overflow: hidden; }
+header .gnb-wrapper .wrap .gnb dl div dd { line-height: 40px; padding-left: 20px; color: #fff; font-size: 16px; }
+header .gnb-wrapper .wrap .gnb dl div dd ul li { font-size: 14px; padding-left: 10px; line-height: 30px; color: #bbb; }
 
 /*  FOOTER  */
 /* Board */
