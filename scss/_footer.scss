@@ -1,5 +1,44 @@
 /*  FOOTER  */
 
 footer{
+    background-color: #012c3d;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+        .wrap{
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            .footer_ci{
+                width: 120px;
+                height: 52px;
+                background:url("../_images/main/footer-ci.png") no-repeat 0 0;
+            }
+            .txt_wrap{
+                margin-left: 80px;
+                font-size:14px;
+                color: #ccc;                
+                font-weight: 300;
+                .copy_wrap{                    
+                    align-items: center;
+                    height: 24px;
+                    display: flex;
+                    p{
+                        border-left: 1px solid #979797;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                        &:first-child{
+                            border: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
 }
+    
+
 
