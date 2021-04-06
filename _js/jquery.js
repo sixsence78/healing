@@ -19,9 +19,9 @@ $(function(){
 	////////////////////     HEADER     ////////////////////
 	
 	/*   HEADER 로드   */
-	/*$("header").load('../_inc/gnb.html',function(){
+	$("header").load('../_inc/gnb.html',function(){
 		 LNBinit();
-	});*/
+	});
 	
 	/*     WEB     */
 	$(document).on("mouseover",".gnb dl",function(){
@@ -42,7 +42,7 @@ $(function(){
 	////////////////////     FOOTER     ////////////////////
 	
 	/*   FOOTER 로드   */
-	//$("footer").load('../_inc/footer.html');
+	$("footer").load('../_inc/footer.html');
 	
 	////////////////////     LNB     ////////////////////
 	

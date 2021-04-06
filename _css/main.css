@@ -132,7 +132,7 @@ header .gnb-wrapper .wrap .gnb dl div dd { line-height: 40px; padding-left: 20px
 header .gnb-wrapper .wrap .gnb dl div dd ul li { font-size: 14px; padding-left: 10px; line-height: 30px; color: #bbb; }
 
 /*  FOOTER  */
-footer { background-color: #012c3d; display: flex; justify-content: center; padding: 40px 0; }
+footer { background-color: #012c3d; display: flex; justify-content: center; padding: 40px 0; margin-top: 100px; }
 footer .wrap { width: 100%; max-width: 1200px; padding: 0 15px; display: flex; align-items: center; }
 footer .wrap .footer_ci { width: 120px; height: 52px; background: url("../_images/main/footer-ci.png") no-repeat 0 0; }
 footer .wrap .txt_wrap { margin-left: 80px; font-size: 14px; color: #ccc; font-weight: 300; }
@@ -173,7 +173,7 @@ footer .wrap .txt_wrap .copy_wrap p:first-child { border: none; margin: 0; paddi
 .main-banner .wrap .text-wrap .item { position: absolute; left: 0; top: 120px; opacity: 0; }
 .main-banner .wrap .text-wrap .item:first-child { opacity: 1; }
 .main-banner .wrap .text-wrap .sub-slogan { margin-top: 30px; }
-.main-banner .wrap .slider { position: absolute; z-index: -1; top: 80px; right: 15px; width: 670px; height: 480px; }
+.main-banner .wrap .slider { position: absolute; z-index: -1; top: 80px; right: 15px; width: 670px; height: 450px; box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25); }
 .main-banner .wrap .ui { display: flex; position: absolute; left: 50%; bottom: 0; margin-left: -325px; }
 .main-banner .wrap .ui div { width: 80px; height: 80px; font-size: 24px; color: #000; font-weight: 300; display: flex; justify-content: center; align-items: center; }
 .main-banner .wrap .ui div.ui-prev { background: url("../_images/main/ui-right.png") no-repeat center/cover; cursor: pointer; }

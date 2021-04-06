@@ -158,7 +158,7 @@ header .gnb-wrapper .wrap .gnb dl div dd { line-height: 40px; padding-left: 20px
 header .gnb-wrapper .wrap .gnb dl div dd ul li { font-size: 14px; padding-left: 10px; line-height: 30px; color: #bbb; }
 
 /*  FOOTER  */
-footer { background-color: #012c3d; display: flex; justify-content: center; padding: 40px 0; }
+footer { background-color: #012c3d; display: flex; justify-content: center; padding: 40px 0; margin-top: 100px; }
 footer .wrap { width: 100%; max-width: 1200px; padding: 0 15px; display: flex; align-items: center; }
 footer .wrap .footer_ci { width: 120px; height: 52px; background: url("../_images/main/footer-ci.png") no-repeat 0 0; }
 footer .wrap .txt_wrap { margin-left: 80px; font-size: 14px; color: #ccc; font-weight: 300; }

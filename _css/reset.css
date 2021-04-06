@@ -48,7 +48,7 @@ a:focus,
 button:focus,
 input:focus,
 textarea:focus,
-select:focus {outline:0;}
+*:focus {outline:0;}
 
 button{cursor: pointer;}
 
