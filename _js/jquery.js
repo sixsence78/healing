@@ -20,7 +20,7 @@ $(function(){
 	
 	/*   HEADER 로드   */
 	$("header").load('../_inc/gnb.html',function(){
-		 LNBinit();
+		 //LNBinit();
 	});
 	
 	/*     WEB     */
