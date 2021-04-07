@@ -256,3 +256,7 @@ footer .wrap .txt_wrap .copy_wrap p:first-child { border: none; margin: 0; paddi
 .modal-social .social-con a.twitter { background: url(../_images/common/sns_twitter.png) no-repeat top center; }
 .modal-social .social-con a.blog { background: url(../_images/common/sns_blog.png) no-repeat top center; }
 .modal-social .social-con a.url { background: url(../_images/common/sns_url.png) no-repeat top center; }
+
+.sub-top { position: relative; height: 266px; }
+.sub-top .left-box { width: 61.56vw; height: 220px; background: #f94450; position: absolute; z-index: -1; }
+.sub-top .right-box { width: 49.06vw; height: 140px; background: url("../_images/main/group-2.png") no-repeat; position: absolute; top: 126px; right: 0; }

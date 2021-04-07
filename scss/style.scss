@@ -16,7 +16,26 @@
 ////////////////////     COMMON     ////////////////////
 
 
-
+.sub-top{
+    position: relative;
+    height: 266px;
+    .left-box{
+        width: 61.56vw;
+        height: 220px;
+        background: $primary;
+        position: absolute;
+        z-index: -1;
+    }
+    .right-box{
+        width: 49.06vw;
+        height: 140px;
+        background: url("../_images/main/group-2.png")no-repeat;
+        position: absolute;
+        top: 126px;
+        right: 0;
+                      
+    }
+}
 
 
 
