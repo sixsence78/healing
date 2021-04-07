@@ -96,6 +96,15 @@
             width: 100%;
             max-width: 1200px;
             padding: 0 15px;
+            .swiper-wrap{
+                width: 61.56vw;
+                height: 400px;
+                background: url("../_images/main/group-2.png")no-repeat top right $point;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }            
             .title-wrap{
                 display: flex;
                 align-items: flex-end;
@@ -127,76 +136,144 @@
                     border-left: 1px solid #dedede;
                 }
             }
-            .title-wrap-main{
-                width: 985px;
-                height: 400px;
-                background: url("../_images/main/group-2.png")no-repeat 0 0;
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: -1;                    
-            }
+
+            .swiper-title{
+                margin-left: 70px;
+                margin-top: 70px;
+                h2{
+                    width: 490px;
+                    height: 71px;
+                    font-size: 48px;
+                    font-weight: 500;
+                    color: #fff;
+                    position: relative;
+                    
+                    /*&:after{
+                        display: block;
+                        width: 100%;
+                        height: 13px;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background: rgba($point,.3);
+                        z-index: -1;
+                    }*/
+
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #fff;
+                }
+        }
+            
+            
             .items{
                 width: 100%;
                 display: flex;
                 margin-top: 30px;
-                .item{
-                    width: calc((100% - 90px) / 4);
-                    margin-left: 30px;
-                    &:first-child{
-                        margin-left: 0;
-                    }
-                    img{width: 100%}
-                    .title{
-                        font-size: 18px;
-                        color: #000;
-                        letter-spacing: -0.42px;
-                        font-weight: 500;
-                        margin-top: 15px;
-                        @include ellipsis();
-                    }
-                    .subs{
-                        margin-top: 10px;
-                        font-size: 16px;
-                        letter-spacing: -0.25px;
-                        color: #454545;
-                        line-height: 24px;
-                        @include multiline_ellipsis(2);
-                    }
-                    .date{
-                        font-size: 14px;
-                        font-weight: 700;
-                        padding-top: 30px;
-                        position: relative;
-                        &:before{
-                            display: block;
-                            width: 10px;
-                            height: 2px;
-                            content: "";
-                            background: #000;
-                            position: absolute;
-                            top: 14px;
-                        }
-                    }
-                    .btn-resi{
-                        width: 100%;
-                        border-radius: 8px;
-                        background: #dedede;
-                        text-align: center;
-                        line-height: 40px;
-                        font-size: 16px;
-                        color: #767676;
-                        margin-top: 30px;
-                        font-weight: 500;
-                        a{
-                            display: block;
-                            width: 100%;
-                            color: #fff;
-                            background: $primary;
-                            border-radius: 8px;
-                        }
-                    }
+            &.swiper-items{
+                margin-top: 270px;
                 }
+                    .item{
+                        width: calc((100% - 90px) / 4);
+                        margin-left: 30px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        img{width: 100%}
+                        .title{
+                            font-size: 18px;
+                            color: #000;
+                            letter-spacing: -0.42px;
+                            font-weight: 500;
+                            margin-top: 15px;
+                            @include ellipsis();
+                        }
+                        .subs{
+                            margin-top: 10px;
+                            font-size: 16px;
+                            letter-spacing: -0.25px;
+                            color: #454545;
+                            line-height: 24px;
+                            @include multiline_ellipsis(2);
+                        }
+                        .date{
+                            font-size: 14px;
+                            font-weight: 700;
+                            padding-top: 30px;
+                            position: relative;
+                            &:before{
+                                display: block;
+                                width: 10px;
+                                height: 2px;
+                                content: "";
+                                background: #000;
+                                position: absolute;
+                                top: 14px;
+                            }
+                        }
+                        .btn-resi{
+                            width: 100%;
+                            border-radius: 8px;
+                            background: #dedede;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 16px;
+                            color: #767676;
+                            margin-top: 30px;
+                            font-weight: 500;
+                            a{
+                                display: block;
+                                width: 100%;
+                                color: #fff;
+                                background: $primary;
+                                border-radius: 8px;
+                            }
+                        }
+                }
+            }
+            .swiper-wrap-arrow{
+                display: flex;
+                justify-content: center;
+                margin-top: 58px;
+                .arrow-left{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ccc;
+                    border-radius: 100%;
+                    background:url("../_images/main/icon-left.png")no-repeat center;               
+                }
+                .swiper-round{
+                    width: 10vw;
+                    display: flex;
+                    align-items: center;  
+                    justify-content: center;
+                    .swiper-item-1{                        
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #012c3d;
+                        border-radius: 100%;
+                        background: #012c3d;
+                        
+                    }
+                    .swiper-item-2{
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 100%;
+                        background: #ccc;
+                        margin-left: 10px;
+                    }       
+                }
+                .arrow-right{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ccc;
+                    border-radius: 100%;
+                    background:url("../_images/main/icon-right.png")no-repeat center;
+                }                
             }
         }
     }
