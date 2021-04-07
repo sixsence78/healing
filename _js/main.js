@@ -16,7 +16,7 @@ $(function(){
             slideChangeTransitionEnd:function(){
                $('.main-banner .text-wrap .item').stop().animate({"opacity":0},500,"easeInOutExpo");
                 $('.main-banner .text-wrap .item').eq(this.realIndex).stop().animate({"opacity":1},500,"easeInOutExpo");
-                console.log(this.realIndex);
+                //console.log(this.realIndex);
             }
         }
     });
