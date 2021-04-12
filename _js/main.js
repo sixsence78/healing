@@ -22,8 +22,8 @@ $(function(){
     });
     
     var oneday = new Swiper('.onday-container', {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 20,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -31,15 +31,35 @@ $(function(){
         pagination: {
             el: '.swiper-pagination',
         },
+        breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            960: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+        }
     });
     
     var huswiper = new Swiper('.hu-swiper', {
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 20,
         navigation: {
             nextEl: '.btn-next',
             prevEl: '.btn-prev',
         },
+        breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            960: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+        }
     });
 
 	
