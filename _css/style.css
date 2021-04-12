@@ -262,6 +262,12 @@ footer .mobile-footer { display: none; }
 .modal-social .social-con a.blog { background: url(../_images/common/sns_blog.png) no-repeat top center; }
 .modal-social .social-con a.url { background: url(../_images/common/sns_url.png) no-repeat top center; }
 
-.sub-top { position: relative; height: 266px; }
-.sub-top .left-box { width: 61.56vw; height: 220px; background: #f94450; position: absolute; z-index: -1; }
-.sub-top .right-box { width: 49.06vw; height: 140px; background: url("../_images/main/group-2.png") no-repeat; position: absolute; top: 126px; right: 0; }
+.sub-top { width: 100%; display: flex; justify-content: center; position: relative; height: 266px; }
+.sub-top .left-box { width: 61.56vw; height: 220px; background: #f94450; position: absolute; left: 0; z-index: -1; }
+.sub-top .right-box { width: 49.06vw; height: 140px; background: url("../_images/common/sub-top01.png") no-repeat; position: absolute; top: 126px; right: 0; }
+.sub-top .text-wrap { width: 100%; max-width: 1200px; padding: 0 15px; }
+.sub-top .text-wrap .title { height: 45px; font-size: 30px; font-weight: 500; color: #fff; margin-top: 50px; margin-left: 200px; letter-spacing: -0.2px; }
+.sub-top .text-wrap .sub-title { height: 48px; font-size: 16px; font-weight: 300; color: #fff; margin-top: 5px; margin-left: 200px; line-height: normal; letter-spacing: -0.11px; }
+
+.sub-middle { width: 100%; max-width: 1200px; margin-top: 61px; }
+.sub-middle .mid-1 { height: 45px; font-size: 30px; font-weight: 300; letter-spacing: -0.25px; color: #000; }
