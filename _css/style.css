@@ -277,3 +277,19 @@ h2 { margin-top: 60px; margin-bottom: 30px; font-size: 30px; font-weight: 300; l
 .festa-title { margin-top: 110px; font-size: 48px; font-weight: 300; letter-spacing: -0.4px; color: #012c3d; text-align: center; }
 
 .festa-text { margin-top: 30px; font-size: 30px; font-weight: 300; letter-spacing: -0.25px; text-align: center; color: #012c3d; line-height: 42px; }
+
+.items { width: 100%; display: flex; flex-wrap: wrap; }
+.items .item { width: calc((100% - 60px) / 3); margin-left: 30px; margin-bottom: 60px; }
+.items .item:nth-child(3n+1) { margin-left: 0; }
+.items .item img { width: 100%; }
+.items .item .title { margin-top: 20px; font-size: 18px; font-weight: 500; letter-spacing: -0.15px; color: #000000; }
+.items .item .date { margin-top: 5px; font-size: 14px; font-weight: 500; line-height: 22px; letter-spacing: -0.12px; color: #454545; }
+
+.paging { display: flex; width: 100%; justify-content: center; }
+.paging .wrap { display: flex; align-items: center; }
+.paging .wrap a { line-height: 40px; text-align: center; width: 40px; height: 40px; }
+.paging .wrap a.page_ll { margin-right: 10px; border: solid 1px #ccc; border-radius: 100%; background: url("../_images/common/icon-ll.png") no-repeat center; }
+.paging .wrap a.page_l { margin-right: 10px; border: solid 1px #ccc; border-radius: 100%; background: url("../_images/common/icon-left.png") no-repeat center; }
+.paging .wrap a.page_r { margin-left: 10px; border: solid 1px #ccc; border-radius: 100%; background: url("../_images/common/icon-right.png") no-repeat center; }
+.paging .wrap a.page_rr { margin-left: 10px; border: solid 1px #ccc; border-radius: 100%; background: url("../_images/common/icon-rr.png") no-repeat center; }
+.paging .wrap a.on { font-weight: 500; color: #f94450; }
