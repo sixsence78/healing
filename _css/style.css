@@ -7,7 +7,7 @@ select { width: 250px; /*padding: .58em .5em;  */ padding-left: 15px; font-famil
 select::-ms-expand { display: none; }
 
 @media screen and (max-width: 960px) { select { padding-left: 10px; height: 40px; } }
-input[type="text"], input[type="password"], input[type="tel"], input[type="email"] { line-height: 43px; height: 45px; text-indent: 20px; width: 400px; font-size: 20px; border: 1px solid #ccc; vertical-align: middle; padding-left: 5px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"] { line-height: 38px; height: 40px; text-indent: 20px; width: 400px; font-size: 14px; border: 1px solid #ccc; vertical-align: middle; padding-left: 5px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @media screen and (max-width: 960px) { input[type="text"], input[type="password"], input[type="tel"], input[type="email"] { line-height: 38px; height: 40px; text-indent: 10px; font-size: 16px; } }
 input[type="button"] { height: 30px; line-height: 30px; background: #f94450; color: #fff; text-align: center; min-width: 130px; border: none; font-size: 14px; cursor: pointer; margin: 0 2px; -moz-appearance: none; -webkit-appearance: none; }
@@ -41,8 +41,15 @@ input[type="file"]::-ms-value { border: 0; height: 45px; }
 input[type="file"]::-ms-browse { color: #fff; border: 0; background: #343f4e; width: 100px; }
 
 @media screen and (max-width: 960px) { input[type="file"] { width: 100%; } }
+.inputs-wrap { border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; padding-top: 30px; }
+.inputs-wrap ul { display: flex; align-items: center; margin-bottom: 30px; }
+.inputs-wrap ul li:first-child { font-size: 16px; color: #000; letter-spacing: -0.33px; font-weight: 500; text-indent: 10px; width: 150px; }
+.inputs-wrap ul li p { display: flex; }
+.inputs-wrap ul li p.point { margin-top: 10px; }
+.inputs-wrap ul li p a { width: 130px; background: #dedede; color: #454545; font-size: 14px; letter-spacing: -0.59px; text-align: center; line-height: 40px; margin-left: 10px; }
+
 /* table */
-table { border-top: 2px solid #333; text-align: left; width: 100%; }
+table { border-top: 2px solid #000; text-align: left; width: 100%; }
 table th { border-bottom: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; padding: 17px 20px; color: #333; font-weight: 500; background: #f6f6f6; vertical-align: middle; line-height: 18px; font-size: 16px; }
 table th button { line-height: 16px; background: #7c7c7c; color: #fff; min-width: 60px; text-align: center; border: none; font-weight: 700; padding: 0 10px; cursor: pointer; vertical-align: middle; }
 table td { border-bottom: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; padding: 17px 20px; vertical-align: middle; line-height: 18px; }
@@ -89,6 +96,8 @@ table.center th.right, table.center td.right { text-align: right; padding: 17px 
 .sub-top .text-wrap .sub-title { height: 48px; font-size: 16px; font-weight: 300; color: #fff; margin-top: 5px; margin-left: 200px; line-height: normal; letter-spacing: -0.11px; }
 
 .event .sub-top .right-box { background-image: url("../_images/common/sub_top_event.png"); }
+
+.membership .sub-top .right-box { background-image: url("../_images/common/sub_top_membership.png"); }
 
 .cs .sub-top .right-box { background-image: url("../_images/common/sub_top_notice.png"); }
 
@@ -186,7 +195,7 @@ footer .mobile-footer { display: none; }
 		vertical-align: middle;
 		color: #fff;
 	}
-}*/ border-top: 2px solid #434446; }
+}*/ border-top: 2px solid #000; }
 .board.list ul { display: flex; border-bottom: 1px solid #e5e5e5; width: 100%; }
 .board.list ul li { line-height: 50px; }
 .board.list ul li.title { width: calc(100% - 90px); font-size: 16px; font-weight: 500; color: #000; text-indent: 10px; letter-spacing: -0.33px; }
