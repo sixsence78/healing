@@ -86,72 +86,7 @@
         line-height: 22px;
         border-bottom: 1px solid $lineColor;        
 	}
-	.file-wrap{
-		border-top: 1px solid $lineColor;
-		border-bottom: 2px solid #333;
-		ul{
-			display: table;
-			line-height: 60px;
-			width: 100%;
-			li{
-				display: table-cell;
-				&.key{
-					width: 15%;
-					text-align: center;
-					color: #333;
-					font-weight: 700;
-				}
-				&.value{
-					width: 85%;
-					a.file{
-						background: url(../_images/common/btn_file.png) no-repeat 0 8px;
-						color: $primary;
-						line-height: 28px;
-						padding-left: 20px;
-						display: inline-block;
-					}
-				}
-			}
-		}
-	}
-	.bottom{
-		margin-top: 50px;
-		border-top: 1px solid $lineColor;
-		ul{
-			border-bottom: 1px solid $lineColor;
-			@include clearfix;
-			li{
-				line-height: 60px;
-				float: left;
-				&.key{
-					width: 130px;
-					font-weight: 700;
-					padding-left: 60px;
-					@include box-sizing(border-box);
-				}
-				&.link{
-					width: calc(100% - 130px);
-					a{
-						display: block;
-						color: #333;
-						width: 100%;
-						@include ellipsis;
-						&:hover{
-							text-decoration: underline;
-						}
-					}
-				}
-			}
-			&.prev .key{
-				background: url(../_images/_board/prev_arrow.png) no-repeat 0 0;
-				background-size: contain;
-			}
-			&.next .key{
-				background: url(../_images/_board/next_arrow.png) no-repeat 0 0;
-				background-size: contain;
-			}
-		}
-	}
+
 	.btn-wrap{
 		text-align: right;
 		a{
@@ -192,73 +127,66 @@
             }
         }
     }
+    &.faq{
+        border-top: none;
+        table{
+            border-top: 2px solid #000;
+            tr{
+                &.q{
+                    cursor: pointer;
+                    .cate{
+                        width: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #f94450;
+                        letter-spacing: -0.33px;
+                        text-align: center;
+                        background: #eeeeee;
+                    }
+                    .title{
+                       width: calc(100% - 50px);
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: -0.33px;
+                        color: #000000;     
+                    }
+                }
+                &.a{
+                    display: none;
+                    .cate{
+                        width: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #33dc9e;
+                        letter-spacing: -0.33px;
+                        text-align: center;
+                        background: #eeeeee; 
+                    }
+                    .text{
+                       width: calc(100% - 50px);
+                        font-size: 14px;        
+                        line-height: 1.71;
+                        letter-spacing: -0.59px;                    
+                        color: #454545; 
+                        background: #eeeeee; 
+                    }
+                }      
+            }
+        }
+    }
 }
-
-.board.thumb-list{
-	.list{
-		padding: 30px 0;
-		a{
-			display: block;
-		}
-		.thumb{
-			width: 370px;
-			line-height: 1;
-		}
-		.thumb-text{
-			padding: 0 40px;
-			vertical-align: top;
-			.title{
-				font-size: 18px;
-				color: #333;
-			}
-			.text{
-				margin-top: 30px;
-				line-height: 24px;
-			}
-		}
-	}
+.board-map{
+    width: 1170px;
+    height: 500px;
+    background: #d8d8d8; 
 }
-
-.board-media-view-con{
-	display: table;
-	border-bottom: 2px solid #333;
-	.media-list{
-		display: table-cell;
-		width: 300px;
-		padding: 40px 30px;
-		background: #f5f5f5;
-		vertical-align: top;
-		@include box-sizing(border-box);
-		dt{
-			font-size: 18px;
-			font-weight: 700;
-			color: $primary;
-			margin-bottom: 10px;
-		}
-		dd{
-			@include listStyle(10px, 30px, "../_images/common/bu_line.png",15px);
-			font-size: 15px;
-			font-weight: normal;
-			&.on{
-				a{
-					color: #333;
-					font-weight: 700;
-				}
-			}
-		}
-	}
-	.media-con{
-		padding: 50px 0 30px 50px;
-		.subtitle{
-			overflow-y: auto;
-			padding-top: 30px;
-			height: 220px;
-			@include box-sizing(border-box);
-		}
-	}
+.board-addr{
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    color: #000000;
 }
-
-
 /* paging */
 
 #paging{
