@@ -84,7 +84,10 @@
 	.board-view-con{
 		padding: 50px;
         line-height: 22px;
-        border-bottom: 1px solid $lineColor;        
+        border-bottom: 1px solid $lineColor;
+        img{
+            width: 100%;
+        }
 	}
 
 	.btn-wrap{
@@ -109,6 +112,7 @@
     }
     &.thumb{
         .items{
+            padding-top: 30px;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -238,35 +242,13 @@
         }
         &.thumb{
             .items{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
+                justify-content: space-between;
                 .item{
-                    width: calc((100% - 60px) / 3);
+                    width: calc((100% - 30px) / 2);
                     margin-left: 30px;
-                    &:nth-child(3n+1){
+                    &:nth-child(2n+1){
                         margin-left: 0;
                     }
-                    margin-bottom: 60px;
-                    img{
-                        width: 100%;
-                    }
-                    .title{
-                        margin-top: 20px;
-                        font-size: 18px;
-                        font-weight: 500;
-                        letter-spacing: -0.15px;
-                        color: #000000;
-                    }
-                    .date{
-                        margin-top: 5px;
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 22px;
-                        letter-spacing: -0.12px;
-                        color: #454545;                
-                        }
-
                 }
             }
         }
@@ -296,6 +278,28 @@
                             line-height: 22px; 
                         }
                     }      
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    
+    .board{
+        &.thumb{
+            .items{
+                .item{
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 30px;
+                    .title{
+                        font-size: 14px;
+                    }
+                    .date{
+                        font-size: 12px;         
+                    }
                 }
             }
         }
