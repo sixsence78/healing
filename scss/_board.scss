@@ -276,42 +276,24 @@
                 border-top: 2px solid #000;
                 tr{
                     &.q{
-                        cursor: pointer;
                         .cate{
-                            width: 50px;
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #f94450;
-                            letter-spacing: -0.33px;
-                            text-align: center;
-                            background: #eeeeee;
+                            font-size: 14px;
+                            line-height: 22px;
                         }
                         .title{
                            width: calc(100% - 50px);
-                            font-size: 16px;
-                            font-weight: 500;
-                            letter-spacing: -0.33px;
-                            color: #000000;     
+                            font-size: 14px;
+                            line-height: 22px;    
                         }
                     }
                     &.a{
-                        display: none;
                         .cate{
-                            width: 50px;
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #33dc9e;
-                            letter-spacing: -0.33px;
-                            text-align: center;
-                            background: #eeeeee; 
+                            font-size: 14px;
+                            line-height: 22px; 
                         }
                         .text{
-                           width: calc(100% - 50px);
-                            font-size: 14px;        
-                            line-height: 1.71;
-                            letter-spacing: -0.59px;                    
-                            color: #454545; 
-                            background: #eeeeee; 
+                           font-size: 14px;
+                            line-height: 22px; 
                         }
                     }      
                 }
