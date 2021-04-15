@@ -1,7 +1,7 @@
 /* form */
 
 select{
-	width: 250px; 
+	width: 400px; 
 	/*padding: .58em .5em;  */
 	padding-left: 15px;
 	//text-indent: 15px;
@@ -77,11 +77,10 @@ a.file{
 
 textarea{
 	width: 100%;
-	height: 350px;
+	height: 150px;
 	padding: 20px;
 	border: 1px solid $lineColor;
 	color: #666;
-	margin-top: 40px;
 	line-height: 24px;
 	vertical-align: baseline;
 	@include appearance(none);
@@ -129,12 +128,13 @@ textarea{
 	input[type="radio"] + label{
 		display: inline-block;
 		position: relative;
-		padding-left:35px;
+		padding-left:30px;
+        padding-right: 20px;
 		cursor: pointer;
 		color:#666;
 		min-width:0;
 		//height:25px;
-		line-height:25px;
+		line-height:20px;
 		text-align:left;
 		vertical-align: middle;
 		-webkit-user-select: none;
@@ -148,8 +148,8 @@ textarea{
 			top: 0;
 			display: inline-block;
 			content: "";
-			width: 25px;
-			height: 25px;
+			width: 20px;
+			height: 20px;
 			vertical-align: middle;
 			margin-right: 10px;
 			background:url(../_images/_form/radio.png) no-repeat left bottom;
@@ -162,12 +162,13 @@ textarea{
 	input[type="checkbox"] + label{
 		display: inline-block;
 		position: relative;
-		padding-left:35px;
+		padding-left:30px;
+        padding-right: 20px;
 		cursor: pointer;
 		color:#666;
 		min-width:0;
 		//height:25px;
-		line-height:25px;
+		line-height:20px;
 		text-align:left;
 		vertical-align: middle;
 		-webkit-user-select: none;
@@ -179,8 +180,8 @@ textarea{
 			top: 0;
 			display: inline-block;
 			content: "";
-			width: 25px;
-			height: 25px;
+			width: 20px;
+			height: 20px;
 			vertical-align: top;
 			margin-right: 10px;
 			background:url(../_images/_form/checkbox.png) no-repeat left bottom;
@@ -274,6 +275,7 @@ input[type="file"]::-ms-browse {
         align-items: center;
         margin-bottom: 30px;
         li{
+            width: calc(100% - 150px);
             &:first-child{
                 font-size: 16px;
                 color: #000;
@@ -284,6 +286,7 @@ input[type="file"]::-ms-browse {
             }
             p{
                 display: flex;
+                width: 100%;
                 &.point{
                     margin-top: 10px;
                 }

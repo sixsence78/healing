@@ -2,7 +2,7 @@
 /* form */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-select { width: 250px; /*padding: .58em .5em;  */ padding-left: 15px; font-family: inherit; border: 1px solid #ccc; background: url(../_images/_form/select.png) no-repeat right center #fff; background-size: contain; vertical-align: middle; height: 45px; border-radius: 0px; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+select { width: 400px; /*padding: .58em .5em;  */ padding-left: 15px; font-family: inherit; border: 1px solid #ccc; background: url(../_images/_form/select.png) no-repeat right center #fff; background-size: contain; vertical-align: middle; height: 45px; border-radius: 0px; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 select::-ms-expand { display: none; }
 
@@ -14,18 +14,18 @@ input[type="button"] { height: 30px; line-height: 30px; background: #f94450; col
 
 a.file { background: url(../_images/common/btn_file.png) no-repeat 10px center; line-height: 28px; color: #f94450; padding-left: 35px; padding-right: 10px; display: inline-block; }
 
-textarea { width: 100%; height: 350px; padding: 20px; border: 1px solid #e5e5e5; color: #666; margin-top: 40px; line-height: 24px; vertical-align: baseline; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+textarea { width: 100%; height: 150px; padding: 20px; border: 1px solid #e5e5e5; color: #666; line-height: 24px; vertical-align: baseline; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @media screen and (max-width: 960px) { a.file { font-size: 12px; padding-left: 30px; }
   textarea { height: 220px; padding: 15px; margin-top: 10px; line-height: 17px; font-size: 12px; } }
 .checks input[type="radio"], .checks input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 .checks input[type="radio"]:focus, .checks input[type="checkbox"]:focus { width: 20px; height: 20px; outline: solid; }
 .checks input[type="radio"]:focus + label, .checks input[type="checkbox"]:focus + label { border: 1px dotted #000; }
-.checks input[type="radio"] + label { display: inline-block; position: relative; padding-left: 35px; cursor: pointer; color: #666; min-width: 0; line-height: 25px; text-align: left; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; margin-right: 40px; position: relative; }
-.checks input[type="radio"] + label:before { position: absolute; left: 0; top: 0; display: inline-block; content: ""; width: 25px; height: 25px; vertical-align: middle; margin-right: 10px; background: url(../_images/_form/radio.png) no-repeat left bottom; }
+.checks input[type="radio"] + label { display: inline-block; position: relative; padding-left: 30px; padding-right: 20px; cursor: pointer; color: #666; min-width: 0; line-height: 20px; text-align: left; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; margin-right: 40px; position: relative; }
+.checks input[type="radio"] + label:before { position: absolute; left: 0; top: 0; display: inline-block; content: ""; width: 20px; height: 20px; vertical-align: middle; margin-right: 10px; background: url(../_images/_form/radio.png) no-repeat left bottom; }
 .checks input[type="radio"] + label:last-of-type { margin: 0; }
-.checks input[type="checkbox"] + label { display: inline-block; position: relative; padding-left: 35px; cursor: pointer; color: #666; min-width: 0; line-height: 25px; text-align: left; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
-.checks input[type="checkbox"] + label:before { position: absolute; left: 0; top: 0; display: inline-block; content: ""; width: 25px; height: 25px; vertical-align: top; margin-right: 10px; background: url(../_images/_form/checkbox.png) no-repeat left bottom; }
+.checks input[type="checkbox"] + label { display: inline-block; position: relative; padding-left: 30px; padding-right: 20px; cursor: pointer; color: #666; min-width: 0; line-height: 20px; text-align: left; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+.checks input[type="checkbox"] + label:before { position: absolute; left: 0; top: 0; display: inline-block; content: ""; width: 20px; height: 20px; vertical-align: top; margin-right: 10px; background: url(../_images/_form/checkbox.png) no-repeat left bottom; }
 .checks input[type="radio"]:checked + label:before, .checks input[type="checkbox"]:checked + label:before { background-position: left top; }
 
 @media screen and (max-width: 960px) { .checks input[type="radio"] + label, .checks input[type="checkbox"] + label { padding-left: 30px; font-size: 12px; line-height: 20px; }
@@ -43,8 +43,9 @@ input[type="file"]::-ms-browse { color: #fff; border: 0; background: #343f4e; wi
 @media screen and (max-width: 960px) { input[type="file"] { width: 100%; } }
 .inputs-wrap { border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; padding-top: 30px; }
 .inputs-wrap ul { display: flex; align-items: center; margin-bottom: 30px; }
+.inputs-wrap ul li { width: calc(100% - 150px); }
 .inputs-wrap ul li:first-child { font-size: 16px; color: #000; letter-spacing: -0.33px; font-weight: 500; text-indent: 10px; width: 150px; }
-.inputs-wrap ul li p { display: flex; }
+.inputs-wrap ul li p { display: flex; width: 100%; }
 .inputs-wrap ul li p.point { margin-top: 10px; }
 .inputs-wrap ul li p a { width: 130px; background: #dedede; color: #454545; font-size: 14px; letter-spacing: -0.59px; text-align: center; line-height: 40px; margin-left: 10px; }
 
