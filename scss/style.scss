@@ -13,6 +13,84 @@
 
 
 
+////////////////////     inputs     ////////////////////
+
+.inputs-wrap{
+    border-top: 2px solid #000;
+    border-bottom: 1px solid $lineColor;
+    padding-top: 30px;
+    ul{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        li{
+            width: calc(100% - 150px);
+            &:first-child{
+                font-size: 16px;
+                color: #000;
+                letter-spacing: -0.33px;
+                font-weight: 500;
+                text-indent: 10px;
+                width: 150px;
+            }
+            p{
+                display: flex;
+                width: 100%;
+                &.point{
+                    margin-top: 10px;
+                }
+                a{
+                    width: 130px;
+                    background: #dedede;
+                    color: #454545;
+                    font-size: 14px;
+                    letter-spacing: -0.59px;
+                    text-align: center;
+                    line-height: 40px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px){
+    
+   .inputs-wrap{
+        padding-top: 20px;
+        ul{
+            margin-bottom: 20px;
+            li{
+                width: calc(100% - 100px);
+                &:first-child{
+                    font-size: 12px;
+                    width: 100px;
+                }
+                input[type="text"],input[type="password"]{
+                    width: 100%;
+                }
+                p{
+                    flex-wrap: wrap;
+                    input[type="text"],input[type="password"],input[type="password"]{
+                        width: calc(100% - 100px);
+                    }
+                    a{
+                        width: 90px;
+                        font-size: 12px;
+                    }
+                    input[type="checkbox"] + label{
+                        margin-bottom: 10px;
+                    }
+                }
+                select{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+    
+}
+
 ////////////////////     sub page     ////////////////////
 ////////////////////     힐링페스타 소개     ////////////////////
 

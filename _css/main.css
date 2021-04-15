@@ -41,14 +41,6 @@ input[type="file"]::-ms-value { border: 0; height: 45px; }
 input[type="file"]::-ms-browse { color: #fff; border: 0; background: #343f4e; width: 100px; }
 
 @media screen and (max-width: 960px) { input[type="file"] { width: 100%; } }
-.inputs-wrap { border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; padding-top: 30px; }
-.inputs-wrap ul { display: flex; align-items: center; margin-bottom: 30px; }
-.inputs-wrap ul li { width: calc(100% - 150px); }
-.inputs-wrap ul li:first-child { font-size: 16px; color: #000; letter-spacing: -0.33px; font-weight: 500; text-indent: 10px; width: 150px; }
-.inputs-wrap ul li p { display: flex; width: 100%; }
-.inputs-wrap ul li p.point { margin-top: 10px; }
-.inputs-wrap ul li p a { width: 130px; background: #dedede; color: #454545; font-size: 14px; letter-spacing: -0.59px; text-align: center; line-height: 40px; margin-left: 10px; }
-
 /* Font - Noto Sans KR */
 /* Font - Roboto */
 /* Layout */

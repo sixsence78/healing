@@ -266,44 +266,6 @@ input[type="file"]::-ms-browse {
 
 
 
-.inputs-wrap{
-    border-top: 2px solid #000;
-    border-bottom: 1px solid $lineColor;
-    padding-top: 30px;
-    ul{
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        li{
-            width: calc(100% - 150px);
-            &:first-child{
-                font-size: 16px;
-                color: #000;
-                letter-spacing: -0.33px;
-                font-weight: 500;
-                text-indent: 10px;
-                width: 150px;
-            }
-            p{
-                display: flex;
-                width: 100%;
-                &.point{
-                    margin-top: 10px;
-                }
-                a{
-                    width: 130px;
-                    background: #dedede;
-                    color: #454545;
-                    font-size: 14px;
-                    letter-spacing: -0.59px;
-                    text-align: center;
-                    line-height: 40px;
-                    margin-left: 10px;
-                }
-            }
-        }
-    }
-}
 
 
 
