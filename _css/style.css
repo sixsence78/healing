@@ -205,10 +205,11 @@ footer .mobile-footer { display: none; }
 .board .board-view-top .title { font-size: 26px; color: #000; text-align: center; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.2px; }
 .board .board-view-top .date { font-size: 16px; font-weight: 500; letter-spacing: -0.33px; text-align: center; color: #000; }
 .board .board-view-con { padding: 50px; line-height: 22px; border-bottom: 1px solid #e5e5e5; }
+.board .board-view-con img { width: 100%; }
 .board .btn-wrap { text-align: center; padding-top: 40px; }
 .board .btn-wrap a { display: inline-block; width: 100px; text-align: center; color: #454545; line-height: 50px; border: 1px solid #e5e5e5; border-radius: 8px; margin: 0 5px; font-size: 16px; }
 .board .btn-wrap a.solid { background: #f94450; color: #fff; border: none; }
-.board.thumb .items { width: 100%; display: flex; flex-wrap: wrap; }
+.board.thumb .items { padding-top: 30px; width: 100%; display: flex; flex-wrap: wrap; }
 .board.thumb .items .item { width: calc((100% - 60px) / 3); margin-left: 30px; margin-bottom: 60px; }
 .board.thumb .items .item:nth-child(3n+1) { margin-left: 0; }
 .board.thumb .items .item img { width: 100%; }
@@ -232,18 +233,18 @@ footer .mobile-footer { display: none; }
   .board .board-view-con { padding: 20px; line-height: 22px; border-bottom: 1px solid #e5e5e5; }
   .board .btn-wrap { padding-top: 20px; }
   .board .btn-wrap a { width: 80px; line-height: 40px; font-size: 12px; }
-  .board.thumb .items { width: 100%; display: flex; flex-wrap: wrap; }
-  .board.thumb .items .item { width: calc((100% - 60px) / 3); margin-left: 30px; margin-bottom: 60px; }
-  .board.thumb .items .item:nth-child(3n+1) { margin-left: 0; }
-  .board.thumb .items .item img { width: 100%; }
-  .board.thumb .items .item .title { margin-top: 20px; font-size: 18px; font-weight: 500; letter-spacing: -0.15px; color: #000000; }
-  .board.thumb .items .item .date { margin-top: 5px; font-size: 14px; font-weight: 500; line-height: 22px; letter-spacing: -0.12px; color: #454545; }
+  .board.thumb .items { justify-content: space-between; }
+  .board.thumb .items .item { width: calc((100% - 30px) / 2); margin-left: 30px; }
+  .board.thumb .items .item:nth-child(2n+1) { margin-left: 0; }
   .board.faq { border-top: none; }
   .board.faq table { border-top: 2px solid #000; }
   .board.faq table tr.q .cate { font-size: 14px; line-height: 22px; }
   .board.faq table tr.q .title { width: calc(100% - 50px); font-size: 14px; line-height: 22px; }
   .board.faq table tr.a .cate { font-size: 14px; line-height: 22px; }
   .board.faq table tr.a .text { font-size: 14px; line-height: 22px; } }
+@media screen and (max-width: 768px) { .board.thumb .items .item { width: 100%; margin-left: 0; margin-bottom: 30px; }
+  .board.thumb .items .item .title { font-size: 14px; }
+  .board.thumb .items .item .date { font-size: 12px; } }
 /* paging */
 #paging { display: flex; width: 100%; justify-content: center; margin-top: 60px; }
 #paging .wrap { display: flex; align-items: center; }
@@ -309,6 +310,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 
 .festa-text { margin-top: 30px; font-size: 30px; font-weight: 300; letter-spacing: -0.25px; text-align: center; color: #012c3d; line-height: 42px; }
 
+@media screen and (max-width: 960px) { .festa-title { margin-top: 50px; font-size: 20px; line-height: 30px; }
+  .festa-text { margin-top: 20px; font-size: 14px; line-height: 22px; } }
 #map { width: 100%; height: 500px; background: #d8d8d8; }
 
 .addr { margin: 30px 0; font-size: 16px; font-weight: 500; letter-spacing: -0.13px; color: #000000; }

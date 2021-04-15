@@ -375,23 +375,6 @@
             }
         }
     }
-    
-    #contents{
-        .grid-wrapper{
-            .swiper-title-wrap{
-                height: 33.33vw;
-            }
-            .wrap{
-                .items{
-                    &.swiper-items{
-                    margin-top: 26.66vw;
-                    }
-                }
-            }
-        }
-    } 
-}
-
 
     .main-banner{
         .wrap{
@@ -440,6 +423,7 @@
             }
         }
     } 
+    
 }
 
 @media screen and (max-width:768px){
