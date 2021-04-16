@@ -62,9 +62,15 @@ input[type="file"]::-ms-browse { color: #fff; border: 0; background: #343f4e; wi
 .sub-top .text-wrap .title { height: 45px; font-size: 30px; font-weight: 500; color: #fff; margin-top: 50px; margin-left: 200px; letter-spacing: -0.2px; }
 .sub-top .text-wrap .sub-title { height: 48px; font-size: 16px; font-weight: 300; color: #fff; margin-top: 5px; margin-left: 200px; line-height: normal; letter-spacing: -0.11px; }
 
+.program .sub-top .right-box { background-image: url("../_images/common/sub_top_progara.png"); }
+
+.mentor .sub-top .right-box { background-image: url("../_images/common/sub_top_mentor.png"); }
+
 .event .sub-top .right-box { background-image: url("../_images/common/sub_top_event.png"); }
 
 .membership .sub-top .right-box { background-image: url("../_images/common/sub_top_membership.png"); }
+
+.mypage .sub-top .right-box { background-image: url("../_images/common/sub_top_mypage.png"); }
 
 .cs .sub-top .right-box { background-image: url("../_images/common/sub_top_notice.png"); }
 

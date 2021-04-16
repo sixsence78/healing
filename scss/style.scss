@@ -170,6 +170,152 @@
         }    
     }
 }
+
+
+////////////////////     힐링멘토     ////////////////////
+.h-mentor{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -0.25px;
+    color: #000000;
+}
+
+.sec-category{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    ul{
+        display: flex;
+        li{
+            width: 108px;
+            font-size: 16px;
+            color: #454545;
+            text-align: center;
+            margin: 0 33px;
+            letter-spacing: -0.55px;
+            img{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.grid-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        position: relative;
+        .wrap{
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;                       
+            .items{
+                width: 100%;
+                display: flex;
+                margin-top: 30px;
+                flex-wrap: wrap;
+                .item{
+                    width: calc((100% - 90px) / 4);
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    &:nth-child(4n+1){
+                        margin-left: 0;
+                    }
+                    img{width: 100%}
+                    .title{
+                        font-size: 18px;
+                        color: #000;
+                        letter-spacing: -0.42px;
+                        font-weight: 500;
+                        margin-top: 15px;
+                        @include ellipsis();
+                    }
+                    .subs{
+                        margin-top: 10px;
+                        font-size: 16px;
+                        letter-spacing: -0.25px;
+                        color: #454545;
+                        line-height: 24px;
+                        @include ellipsis();
+                    }
+                }
+            }            
+        }
+}
+
+
+@media screen and (max-width:1200px){    
+    .grid-wrapper{
+        .wrap{
+            .items{
+                .item{
+                    width: calc((100% - 60px) / 3);
+                    &:nth-child(4n+1){
+                        margin-left: 30px;
+                    }
+                    &:nth-child(3n+1){
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+@media screen and (max-width:768px){
+
+    .h-mentor{
+        padding-top: 10px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    
+    .sec-category{
+        margin-top: 50px;
+        ul{
+            padding: 0 20px;
+            justify-content: space-between;
+            li{
+                width: calc((100% - 40px) / 5);
+                font-size: 12px;
+                margin: 0;
+                img{
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }       
+    .grid-wrapper{
+            margin-top: 40px;
+            .wrap{
+                padding: 0 20px;
+                .items{
+                    justify-content:space-between;
+                    .item{
+                        width: calc((100% - 17px) / 2);
+                        margin-left: 0 !important;
+                        .title{
+                            font-size: 16px;
+                            margin-top: 5px;
+                        }
+                        .subs{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+
+
+
+
 ////////////////////     고객센터     ////////////////////
 
 

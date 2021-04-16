@@ -80,6 +80,26 @@
     }
 }
 
+
+////////////////////     RIGHT TOP     ////////////////////
+
+
+.program{
+    .sub-top{
+        .right-box{
+            background-image: url("../_images/common/sub_top_progara.png");
+        }
+    }
+}
+
+.mentor{
+    .sub-top{
+        .right-box{
+            background-image: url("../_images/common/sub_top_mentor.png");
+        }
+    }
+}
+
 .event{
     .sub-top{
         .right-box{
@@ -92,6 +112,14 @@
     .sub-top{
         .right-box{
             background-image: url("../_images/common/sub_top_membership.png");
+        }
+    }
+}
+
+.mypage{
+    .sub-top{
+        .right-box{
+            background-image: url("../_images/common/sub_top_mypage.png");
         }
     }
 }
