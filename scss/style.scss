@@ -525,6 +525,18 @@ h3{
             margin-top: 40px;
             .wrap{
                 padding: 0 20px;
+                .title-wrap{
+                    display: block;
+                    h2{
+                        font-size: 20px;           
+                    }
+                    p{
+                        margin-top: 10px;
+                        padding-left: 0;
+                        margin-left: 0;
+                        border-left: none;
+                    }
+                }
                 .items{
                     justify-content:space-between;
                     .item{
@@ -537,6 +549,23 @@ h3{
                         .subs-1{
                             font-size: 14px;
                             line-height: 20px;
+                        }
+                        .subs{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        .date{
+                            font-size: 12px;
+                            font-weight: 700;
+                            padding-top: 20px;
+                            &:before{
+                                top: 9px;
+                            }
+                        }
+                        .btn-resi{
+                            line-height: 30px;
+                            font-size: 14px;
+                            margin-top: 10px;
                         }
                     }
                 }
