@@ -170,6 +170,9 @@
         }    
     }
 }
+////////////////////     프로그램     ////////////////////
+
+
 
 
 ////////////////////     힐링멘토     ////////////////////
@@ -210,7 +213,27 @@
         .wrap{
             width: 100%;
             max-width: 1200px;
-            padding: 0 15px;                       
+            padding: 0 15px;
+            .title-wrap{
+                display: flex;
+                align-items: flex-end;                
+                h2{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #454545;
+                    position: relative;
+                    letter-spacing: -0.68px;
+                    margin: 0;
+                }
+                p{
+                    font-size: 14px;
+                    letter-spacing: -0.48px;
+                    color: #767676;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    border-left: 1px solid #dedede;
+                }
+            }
             .items{
                 width: 100%;
                 display: flex;
@@ -232,7 +255,7 @@
                         margin-top: 15px;
                         @include ellipsis();
                     }
-                    .subs{
+                    .subs-1{
                         margin-top: 10px;
                         font-size: 16px;
                         letter-spacing: -0.25px;
@@ -240,6 +263,47 @@
                         line-height: 24px;
                         @include ellipsis();
                     }
+                    .subs{
+                        margin-top: 10px;
+                        font-size: 16px;
+                        letter-spacing: -0.25px;
+                        color: #454545;
+                        line-height: 24px;
+                        @include multiline_ellipsis(2);
+                    }
+                    .date{
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding-top: 30px;
+                        position: relative;
+                        &:before{
+                            display: block;
+                            width: 10px;
+                            height: 2px;
+                            content: "";
+                            background: #000;
+                            position: absolute;
+                            top: 14px;
+                        }
+                    }
+                    .btn-resi{
+                        width: 100%;
+                        border-radius: 8px;
+                        background: #dedede;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 16px;
+                        color: #767676;
+                        margin-top: 30px;
+                        font-weight: 500;
+                        a{
+                            display: block;
+                            width: 100%;
+                            color: #fff;
+                            background: $primary;
+                            border-radius: 8px;
+                        }
+                    }                    
                 }
             }            
         }
@@ -302,7 +366,7 @@
                             font-size: 16px;
                             margin-top: 5px;
                         }
-                        .subs{
+                        .subs-1{
                             font-size: 14px;
                             line-height: 20px;
                         }
