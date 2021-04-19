@@ -532,6 +532,8 @@
         }
     }
     
+
+    
     #contents{
         .grid-wrapper{
             margin-top: 40px;
@@ -569,25 +571,24 @@
                     }
                 }
                 .items{
+                    justify-content: space-between;
                     &.swiper-items{
                     margin-top: 34.72vw;
                     }
                     .item{
                         width: calc((100% - 17px) / 2);
-                        margin-left: 17px;
-                        &:nth-child(3){
-                            display: none;
-                        }
+                        margin-left: 0 !important;
                         &.swiper-slide{
                             display: block;
                         }
                         .title{
                             font-size: 16px;
+                            margin-top: 5px;
                         }
-                        .subs{
+                        .subs,.subs1{
                             font-size: 14px;
                             line-height: 20px;
-                        }
+                        }                        
                         .date{
                             font-size: 12px;
                             font-weight: 700;
@@ -614,6 +615,21 @@
                     }
                 }
             }
+            &.main{
+                .wrap{
+                    .items{
+                        .item{
+                            margin-left: 17px;
+                            &:nth-child(3){
+                                display: none;
+                                .title{
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }               
+                 }
+             }
         }
         .hu-wrapper{
             margin-top: 50px;
@@ -969,26 +985,13 @@ h3{
     color: #000000;
 }
 
-.sec-category{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    ul{
-        display: flex;
-        li{
-            width: 108px;
-            font-size: 16px;
-            color: #454545;
-            text-align: center;
-            margin: 0 33px;
-            letter-spacing: -0.55px;
-            img{
-                margin-bottom: 10px;
-            }
-        }
+@media screen and (max-width:768px){
+    .h-mentor{
+        padding-top: 10px;
+        font-size: 20px;
+        line-height: 32px;
     }
 }
-
 
 ////////////////////     고객센터     ////////////////////
 
