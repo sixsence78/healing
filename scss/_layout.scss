@@ -323,7 +323,21 @@
         text-align: center;
         color: #454545;
         display: block;
-        width: 140px;
+        padding: 0 20px;
+        &.solid{
+            border: none;
+            color: #fff;
+            background: $primary;
+        }
+        &.down-load{
+            background: $point;
+            color: #fff;
+            margin-left: auto;
+            border: none;
+            &.left{
+                margin-left: 10px;
+            }
+        }
     }
 }
 
@@ -341,6 +355,16 @@
         a{
             margin-left: 0;
             width: calc((100% - 10px) / 2);
+            &.right{
+                width: 100%;
+            }
+            &.down-load{
+                width: 100%;
+                margin-top: 10px;
+                &.left{
+                    margin-left: 0;
+                }
+            }
         }
     }    
 }
@@ -378,10 +402,10 @@
   .table-list{
         ul{
             flex-wrap: wrap;
-            padding-bottom: 5px;
+            padding: 10px;
             li{
                 font-size: 12px;
-                line-height: 40px;
+                line-height: 25px;
                 &:nth-child(1){
                     width: 100%;
                 }
