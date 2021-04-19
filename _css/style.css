@@ -133,9 +133,21 @@ table.center th.right, table.center td.right { text-align: right; padding: 17px 
 .h-wrapper h3 { margin: 0; }
 .h-wrapper a { margin-left: 10px; line-height: 30px; border: 1px solid #e5e5e5; border-radius: 4px; text-align: center; color: #454545; display: block; width: 140px; }
 
+@media screen and (max-width: 768px) { .h-wrapper { margin-top: 20px; margin-bottom: 20px; flex-wrap: wrap; justify-content: space-between; }
+  .h-wrapper h3 { width: 100%; margin-bottom: 20px; }
+  .h-wrapper a { margin-left: 0; width: calc((100% - 10px) / 2); } }
 .table-list { border-top: 2px solid #000; }
-.table-list ul { display: flex; justify-content: space-between; align-items: center; }
+.table-list ul { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e5e5; padding: 0 10px; }
+.table-list ul li { line-height: 50px; color: #767676; }
+.table-list ul li a { font-size: 16px; font-weight: 500; color: #000; }
+.table-list ul li a.form-btn { display: block; text-align: center; line-height: 40px; width: 70px; color: #454545; background: #dedede; }
 
+@media screen and (max-width: 768px) { .table-list ul { flex-wrap: wrap; padding-bottom: 5px; }
+  .table-list ul li { font-size: 12px; line-height: 40px; }
+  .table-list ul li:nth-child(1) { width: 100%; }
+  .table-list ul li:last-child { width: 100%; }
+  .table-list ul li a { font-size: 14px; }
+  .table-list ul li a.form-btn { line-height: 30px; width: 100%; font-size: 12px; } }
 /*  GNB  */
 header { position: sticky; top: 0; z-index: 100; }
 header .util-wrapper { width: 100%; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: center; background: #fff; }
@@ -265,7 +277,7 @@ footer .mobile-footer { display: none; }
   .board.faq table tr.a .cate { font-size: 14px; line-height: 22px; }
   .board.faq table tr.a .text { font-size: 14px; line-height: 22px; }
   .btn-wrap { padding-top: 20px; }
-  .btn-wrap a { width: 80px; line-height: 40px; font-size: 12px; } }
+  .btn-wrap a { width: 70px; line-height: 40px; font-size: 12px; margin: 0 2px; } }
 @media screen and (max-width: 768px) { .board.thumb .items .item { width: 100%; margin-left: 0; margin-bottom: 30px; }
   .board.thumb .items .item .title { font-size: 14px; }
   .board.thumb .items .item .date { font-size: 12px; } }
