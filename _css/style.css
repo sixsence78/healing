@@ -131,19 +131,25 @@ table.center th.right, table.center td.right { text-align: right; padding: 17px 
   .basket-wrap .total .solid { width: 120px; line-height: 40px; margin-left: 20px; } }
 .h-wrapper { display: flex; align-items: center; margin-top: 40px; margin-bottom: 30px; }
 .h-wrapper h3 { margin: 0; }
-.h-wrapper a { margin-left: 10px; line-height: 30px; border: 1px solid #e5e5e5; border-radius: 4px; text-align: center; color: #454545; display: block; width: 140px; }
+.h-wrapper a { margin-left: 10px; line-height: 30px; border: 1px solid #e5e5e5; border-radius: 4px; text-align: center; color: #454545; display: block; padding: 0 20px; }
+.h-wrapper a.solid { border: none; color: #fff; background: #f94450; }
+.h-wrapper a.down-load { background: #33dc9e; color: #fff; margin-left: auto; border: none; }
+.h-wrapper a.down-load.left { margin-left: 10px; }
 
 @media screen and (max-width: 768px) { .h-wrapper { margin-top: 20px; margin-bottom: 20px; flex-wrap: wrap; justify-content: space-between; }
   .h-wrapper h3 { width: 100%; margin-bottom: 20px; }
-  .h-wrapper a { margin-left: 0; width: calc((100% - 10px) / 2); } }
+  .h-wrapper a { margin-left: 0; width: calc((100% - 10px) / 2); }
+  .h-wrapper a.right { width: 100%; }
+  .h-wrapper a.down-load { width: 100%; margin-top: 10px; }
+  .h-wrapper a.down-load.left { margin-left: 0; } }
 .table-list { border-top: 2px solid #000; }
 .table-list ul { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e5e5; padding: 0 10px; }
 .table-list ul li { line-height: 50px; color: #767676; }
 .table-list ul li a { font-size: 16px; font-weight: 500; color: #000; }
 .table-list ul li a.form-btn { display: block; text-align: center; line-height: 40px; width: 70px; color: #454545; background: #dedede; }
 
-@media screen and (max-width: 768px) { .table-list ul { flex-wrap: wrap; padding-bottom: 5px; }
-  .table-list ul li { font-size: 12px; line-height: 40px; }
+@media screen and (max-width: 768px) { .table-list ul { flex-wrap: wrap; padding: 10px; }
+  .table-list ul li { font-size: 12px; line-height: 25px; }
   .table-list ul li:nth-child(1) { width: 100%; }
   .table-list ul li:last-child { width: 100%; }
   .table-list ul li a { font-size: 14px; }
