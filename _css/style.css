@@ -501,6 +501,13 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .programs .item .title { font-size: 16px; } }
 .h-mentor { padding-top: 30px; text-align: center; font-size: 30px; font-weight: 300; letter-spacing: -0.25px; color: #000000; }
 
+.view-wrapper { width: 100%; justify-content: center; margin-top: 30px; position: relative; }
+.view-wrapper .wrap { width: 100%; max-width: 1200px; display: flex; }
+.view-wrapper .wrap .right-items { margin-left: 130px; }
+.view-wrapper .wrap .right-items .item .title1 { font-size: 30px; font-weight: 300; letter-spacing: -1.03px; color: #000000; margin-bottom: 40px; }
+.view-wrapper .wrap .right-items .item .title2 { font-size: 14px; font-weight: 500; letter-spacing: -0.48px; color: #000000; margin-bottom: 10px; }
+.view-wrapper .wrap .right-items .item .subs { font-size: 14px; font-weight: 300; letter-spacing: -0.48px; color: #454545; line-height: 22px; margin-bottom: 20px; }
+
 @media screen and (max-width: 768px) { .h-mentor { padding-top: 10px; font-size: 20px; line-height: 32px; } }
 #map { width: 100%; height: 500px; background: #d8d8d8; }
 
