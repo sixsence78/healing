@@ -994,12 +994,60 @@ h3{
         width: 100%;
         max-width: 1200px;
         display: flex;
-        .left-item{
-            .item{                
+        .left-items{
+            .item{
+                width: 470px;
+            }
+            .ui{
+                .swiper-wrap-arrow{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                    .swiper-pagination{
+                        padding: 0 30px;
+                        span{
+                            width: 10px;
+                            height: 10px;
+                            margin: 0 2px;
+                        }
+                    }
+                    .arrow-left{
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 100%;
+                        background:url("../_images/main/icon-left.png")no-repeat center;               
+                    }
+                    .arrow-right{
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 100%;
+                        background:url("../_images/main/icon-right.png")no-repeat center;
+                    }
+                }
+            }
+            .wrap{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                a{
+                    width: calc((100% - 10px)  / 2);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border: 1px solid #000000;
+                    &:hover{
+                        color: $primary;
+                        border-color: $primary;
+                    }
+                }
             }
         }
         .right-items{
-            margin-left: 130px;
+            margin-left: 6.77vw;
             .item{
                 .title1{
                     font-size: 30px;
@@ -1024,6 +1072,86 @@ h3{
                     margin-bottom: 20px;
                 }
              }
+        }
+    }
+    .comment-wrap{
+        margin-top: 80px;
+        .title-wrap{
+            display: flex;
+            align-items: center;
+            .comment{
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: -0.55px;
+                color: #000000;
+                text-align: center;
+                margin-right: 20px;
+            }
+            .star-wrap{
+                display: flex;
+                img{
+                    margin-right: 5px;
+                }
+            }                        
+        }
+        textarea{
+            margin-top: 30px;
+        }
+        .bottom-wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom-left{ 
+            display: flex;
+            .input-wrap{
+                div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 340px; 
+                    margin-top: 10px;
+                }
+                input[type="text"]{
+                    width: 200px;                    
+                }
+                a{
+                    width: 130px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.59px;
+                    text-align: center;
+                    margin-left: 10px;
+                    background: #dedede;
+                } 
+            }
+            .add{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #000;
+                background: url("../_images/common/icon-plus.png")no-repeat center;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        .bottom-right{
+            display: flex;
+            justify-content: space-between;
+            a{
+                margin-left: 10px;
+                margin-top: 10px;
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+                letter-spacing: -0.55px;
+                text-align: center;
+                line-height: 40px;
+                color: #ffffff;
+                border-radius: 8px;
+                background: #767676;
+                &.solid{
+                    background: $primary;
+                }
+            }
         }
     }
 }

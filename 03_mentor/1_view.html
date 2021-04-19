@@ -8,6 +8,7 @@
 <title>힐링페스타</title>
 <link href="../_css/reset.css" rel="stylesheet" type="text/css">
 <link href="../_css/style.css" rel="stylesheet" type="text/css">
+<link href="../_css/swiper.css"  rel="stylesheet" type="text/css">
 <script type="text/javascript" src="../_js/jquery-1.9.1.js"></script> 
 <script type="text/javascript" src="../_js/jquery.easing.1.3.js"></script> 
 <script type="text/javascript" src="../_js/jquery.backgroundpos.js"></script> 
@@ -33,8 +34,19 @@
         <h2>힐링멘토 소개</h2>
         <div class="view-wrapper">
             <div class="wrap">
-                <div class="left-item">
+                <div class="left-items">
                     <div class="item"> <img src="../_images/common/mento-dummy.png" alt=""/></div>
+                    <div class="ui">
+                        <div class="swiper-wrap-arrow">
+                            <div class="arrow-left swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="arrow-right swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <a href="#">담당 프로그램 보기</a>
+                        <a href="#">프로그램 일정표 보기</a>
+                    </div>                        
                 </div>
                 <div class="right-items">
                     <div class="item">
@@ -56,6 +68,42 @@
                     </div>                    
                 </div>
             </div>
+                <div class="comment-wrap">
+                    <div class="title-wrap">
+                        <div class="comment">여러분의 힐링멘토는 어땟나요?</div>
+                        <div class="star-wrap">
+                            <img src="../_images/common/icon-star-on.png">
+                            <img src="../_images/common/icon-star-on.png">
+                            <img src="../_images/common/icon-star-on.png">
+                            <img src="../_images/common/icon-star-on.png">
+                            <img src="../_images/common/icon-star.png">
+                        </div>
+                    </div> 
+                    <textarea></textarea>
+                    <div class="bottom-wrap">
+                        <div class="bottom-left">
+                            <div class="input-wrap">
+                                <div>
+                                    <input type="text">
+                                    <a href="#">이미지 추가</a>
+                                </div>
+                                <div>
+                                    <input type="text">
+                                    <a href="#">이미지 추가</a>
+                                </div>
+                                <div>
+                                    <input type="text">
+                                    <a href="#">이미지 추가</a>
+                                </div>
+                            </div>
+                            <a href="#" class="add"></a>
+                        </div>
+                        <div class="bottom-right">
+                            <a href="#" class="solid">등록</a>
+                            <a href="#">수정</a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </section>
