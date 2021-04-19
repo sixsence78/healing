@@ -23,7 +23,7 @@ $(function(){
     
     var oneday = new Swiper('.onday-container', {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 17,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -33,10 +33,14 @@ $(function(){
         },
         breakpoints: {
             768: {
+              slidesPerView: 2,
+              spaceBetween: 17,
+            },
+            960: {
               slidesPerView: 3,
               spaceBetween: 30,
             },
-            960: {
+            1200: {
               slidesPerView: 4,
               spaceBetween: 30,
             },
