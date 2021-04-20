@@ -986,7 +986,7 @@ h3{
     }
 }
 
-////////////////////     힐링멘토     ////////////////////
+////////////////////     힐링멘토 list    ////////////////////
 .h-mentor{
     padding-top: 30px;
     text-align: center;
@@ -995,6 +995,14 @@ h3{
     letter-spacing: -0.25px;
     color: #000000;
 }
+@media screen and (max-width:768px){
+    .h-mentor{
+        padding-top: 10px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+////////////////////     힐링멘토 상세    ////////////////////
 
 .view-wrapper{
     width: 100%;
@@ -1012,16 +1020,23 @@ h3{
             .ui{
                 .swiper-wrap-arrow{
                     display: flex;
+                    align-items: center;
                     justify-content: center;
                     margin-top: 30px;
                     .swiper-pagination{
                         padding: 0 30px;
                         span{
-                            width: 10px;
-                            height: 10px;
-                            margin: 0 2px;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0 5px;
+                            background: #012c3d;
+                            opacity: 0.3;
+                            &.swiper-pagination-bullet-active{
+                                opacity: 1;
+                            }
                         }
                     }
+                    
                     .arrow-left{
                         width: 40px;
                         height: 40px;
@@ -1111,9 +1126,11 @@ h3{
         .bottom-wrap{
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
         }
         .bottom-left{ 
             display: flex;
+            order: 1;
             .input-wrap{
                 div{
                     display: flex;
@@ -1147,6 +1164,7 @@ h3{
         .bottom-right{
             display: flex;
             justify-content: space-between;
+            order: 2;
             a{
                 margin-left: 10px;
                 margin-top: 10px;
@@ -1163,18 +1181,134 @@ h3{
                     background: $primary;
                 }
             }
+            &.has-none{
+                margin-left: auto;
+            }
+        }
+    }
+    .sum-wrap{
+        display: flex;
+        margin-top: 30px;
+        .item{
+            width: 170px;
+            height: 110px;
+            margin-left: 10px;
+             &:first-child{
+                 margin-left: 0;
+            }
         }
     }
 }
 
+@media screen and (max-width:960px){
+    .view-wrapper{
+        .wrap{
+            .left-items{
+                .item{
+                    width: 48.95vw;
+                }
+            }
+        }
+    }    
+}
+    
 @media screen and (max-width:768px){
-    .h-mentor{
-        padding-top: 10px;
-        font-size: 20px;
-        line-height: 32px;
+    .view-wrapper{
+        .wrap{
+            display: block;
+            .left-items{
+                .item{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .ui{
+                    .swiper-wrap-arrow{
+                        .swiper-pagination{
+                            span{
+                                width: 10px;
+                                height: 10px;
+                                margin: 0 2px;
+                            }
+                        }
+                    }
+                }
+                .wrap{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    a{
+                        font-size: 14px;
+                        line-height: 40px;                        
+                    }
+                }
+            }
+            .right-items{
+                margin-left: 0;
+                margin-top: 40px;
+                .item{
+                    .title1{
+                        font-size: 24px;
+                        margin-bottom: 20px;                
+                    }
+                    .subs{
+                        font-size: 12px;
+                        line-height: 18px;
+                        margin-bottom: 20px;
+                    }
+                 }
+            }
+        }
+        .comment-wrap{
+            margin-top: 40px;
+            .title-wrap{
+                .comment{
+                    font-size: 14px;
+                }
+                .star-wrap{
+                    display: flex;
+                    img{
+                        width: 20px;
+                        margin-right: 5px;
+                    }
+                }                        
+            }
+            textarea{
+                height: 150px;
+                margin-top: 20px;
+            }
+            .bottom-wrap{
+                display: block;
+            }
+            .bottom-left{ 
+                margin-top: 20px;
+                .input-wrap{
+                    width: calc(100% - 50px);
+                    div{
+                        width: 100%;
+                    }
+                    input[type="text"]{
+                        width: calc(100% - 140px);
+                    }
+                }
+            }
+            .bottom-right{
+                margin-top: 20px;
+                a{
+                    width: calc((100% - 10px) / 2);
+                    margin: 0;
+                }
+            }
+        }
+        .sum-wrap{
+            margin-top: 15px;
+            .item{
+                margin-left: 5px;
+            }
+        }
     }
 }
-
 ////////////////////     고객센터     ////////////////////
 
 

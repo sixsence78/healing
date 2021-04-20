@@ -35,7 +35,13 @@
         <div class="view-wrapper">
             <div class="wrap">
                 <div class="left-items">
-                    <div class="item"> <img src="../_images/common/mento-dummy.png" alt=""/></div>
+                    <div class="item banner-container swiper-container">
+                        <div class="swiper-wrapper">
+                            <img src="../_images/common/mento-dummy.png" class="swiper-slide" alt=""/>
+                            <img src="../_images/common/mento-dummy.png" class="swiper-slide" alt=""/>
+                            <img src="../_images/common/mento-dummy.png" class="swiper-slide" alt=""/>
+                        </div>
+                    </div>                    
                     <div class="ui">
                         <div class="swiper-wrap-arrow">
                             <div class="arrow-left swiper-button-prev"></div>
@@ -72,6 +78,7 @@
                 </div>
                 <textarea></textarea>
                 <div class="bottom-wrap">
+                    <div class="bottom-right"> <a href="#" class="solid">등록</a> <a href="#">수정</a> </div>
                     <div class="bottom-left">
                         <div class="input-wrap">
                             <div>
@@ -85,7 +92,6 @@
                                 <a href="#">이미지 추가</a> </div>
                         </div>
                         <a href="#" class="add"></a> </div>
-                    <div class="bottom-right"> <a href="#" class="solid">등록</a> <a href="#">수정</a> </div>
                 </div>
             </div>
             <div class="comment-wrap">
@@ -93,10 +99,9 @@
                     <div class="comment">여러분의 힐링멘토는 어땟나요?</div>
                     <div class="star-wrap"> <img src="../_images/common/icon-star-on.png"> <img src="../_images/common/icon-star-on.png"> <img src="../_images/common/icon-star-on.png"> <img src="../_images/common/icon-star-on.png"> <img src="../_images/common/icon-star.png"> </div>
                 </div>
-                <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</textarea>
+                <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </textarea>
                 <div class="bottom-wrap">
-                    <div class="bottom-left"></div>
-                    <div class="bottom-right"> <a href="#" class="solid">등록</a> <a href="#">수정</a> </div>
+                    <div class="bottom-right has-none"> <a href="#" class="solid">등록</a> <a href="#">수정</a> </div>
                 </div>
                 <div class="sum-wrap">
                     <div class="item"><img src="../_images/common/img_dummy.png"></div>
@@ -112,5 +117,19 @@
 
 <!--   FOOTER 로드   -->
 <footer class="container-full"></footer>
+<script type="text/javascript">
+    
+        var swiper = new Swiper('.banner-container', {
+       pagination: {
+            el: '.swiper-pagination',
+        },
+      navigation: {
+        nextEl: '.ui .arrow-right',
+        prevEl: '.ui .arrow-left',
+      },
+    loop: true,
+        });
+    
+</script>     
 </body>
 </html>

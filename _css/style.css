@@ -441,12 +441,14 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .programs .item .title { font-size: 16px; } }
 .h-mentor { padding-top: 30px; text-align: center; font-size: 30px; font-weight: 300; letter-spacing: -0.25px; color: #000000; }
 
+@media screen and (max-width: 768px) { .h-mentor { padding-top: 10px; font-size: 20px; line-height: 32px; } }
 .view-wrapper { width: 100%; justify-content: center; margin-top: 30px; position: relative; }
 .view-wrapper .wrap { width: 100%; max-width: 1200px; display: flex; }
 .view-wrapper .wrap .left-items .item { width: 470px; }
-.view-wrapper .wrap .left-items .ui .swiper-wrap-arrow { display: flex; justify-content: center; margin-top: 30px; }
+.view-wrapper .wrap .left-items .ui .swiper-wrap-arrow { display: flex; align-items: center; justify-content: center; margin-top: 30px; }
 .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination { padding: 0 30px; }
-.view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination span { width: 10px; height: 10px; margin: 0 2px; }
+.view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination span { width: 15px; height: 15px; margin: 0 5px; background: #012c3d; opacity: 0.3; }
+.view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination span.swiper-pagination-bullet-active { opacity: 1; }
 .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .arrow-left { width: 40px; height: 40px; border: 1px solid #ccc; border-radius: 100%; background: url("../_images/main/icon-left.png") no-repeat center; }
 .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .arrow-right { width: 40px; height: 40px; border: 1px solid #ccc; border-radius: 100%; background: url("../_images/main/icon-right.png") no-repeat center; }
 .view-wrapper .wrap .left-items .wrap { display: flex; justify-content: space-between; margin-top: 40px; }
@@ -462,17 +464,44 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .view-wrapper .comment-wrap .title-wrap .star-wrap { display: flex; }
 .view-wrapper .comment-wrap .title-wrap .star-wrap img { margin-right: 5px; }
 .view-wrapper .comment-wrap textarea { margin-top: 30px; }
-.view-wrapper .comment-wrap .bottom-wrap { display: flex; justify-content: space-between; }
-.view-wrapper .comment-wrap .bottom-left { display: flex; }
+.view-wrapper .comment-wrap .bottom-wrap { display: flex; justify-content: space-between; flex-direction: row; }
+.view-wrapper .comment-wrap .bottom-left { display: flex; order: 1; }
 .view-wrapper .comment-wrap .bottom-left .input-wrap div { display: flex; flex-wrap: wrap; width: 340px; margin-top: 10px; }
 .view-wrapper .comment-wrap .bottom-left .input-wrap input[type="text"] { width: 200px; }
 .view-wrapper .comment-wrap .bottom-left .input-wrap a { width: 130px; line-height: 40px; font-size: 14px; font-weight: 500; letter-spacing: -0.59px; text-align: center; margin-left: 10px; background: #dedede; }
 .view-wrapper .comment-wrap .bottom-left .add { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-plus.png") no-repeat center; margin-top: 10px; margin-left: 10px; }
-.view-wrapper .comment-wrap .bottom-right { display: flex; justify-content: space-between; }
+.view-wrapper .comment-wrap .bottom-right { display: flex; justify-content: space-between; order: 2; }
 .view-wrapper .comment-wrap .bottom-right a { margin-left: 10px; margin-top: 10px; width: 100px; height: 40px; font-size: 16px; letter-spacing: -0.55px; text-align: center; line-height: 40px; color: #ffffff; border-radius: 8px; background: #767676; }
 .view-wrapper .comment-wrap .bottom-right a.solid { background: #f94450; }
+.view-wrapper .comment-wrap .bottom-right.has-none { margin-left: auto; }
+.view-wrapper .sum-wrap { display: flex; margin-top: 30px; }
+.view-wrapper .sum-wrap .item { width: 170px; height: 110px; margin-left: 10px; }
+.view-wrapper .sum-wrap .item:first-child { margin-left: 0; }
 
-@media screen and (max-width: 768px) { .h-mentor { padding-top: 10px; font-size: 20px; line-height: 32px; } }
+@media screen and (max-width: 960px) { .view-wrapper .wrap .left-items .item { width: 48.95vw; } }
+@media screen and (max-width: 768px) { .view-wrapper .wrap { display: block; }
+  .view-wrapper .wrap .left-items .item { width: 100%; }
+  .view-wrapper .wrap .left-items .item img { width: 100%; }
+  .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination span { width: 10px; height: 10px; margin: 0 2px; }
+  .view-wrapper .wrap .left-items .wrap { display: flex; justify-content: space-between; margin-top: 40px; }
+  .view-wrapper .wrap .left-items .wrap a { font-size: 14px; line-height: 40px; }
+  .view-wrapper .wrap .right-items { margin-left: 0; margin-top: 40px; }
+  .view-wrapper .wrap .right-items .item .title1 { font-size: 24px; margin-bottom: 20px; }
+  .view-wrapper .wrap .right-items .item .subs { font-size: 12px; line-height: 18px; margin-bottom: 20px; }
+  .view-wrapper .comment-wrap { margin-top: 40px; }
+  .view-wrapper .comment-wrap .title-wrap .comment { font-size: 14px; }
+  .view-wrapper .comment-wrap .title-wrap .star-wrap { display: flex; }
+  .view-wrapper .comment-wrap .title-wrap .star-wrap img { width: 20px; margin-right: 5px; }
+  .view-wrapper .comment-wrap textarea { height: 150px; margin-top: 20px; }
+  .view-wrapper .comment-wrap .bottom-wrap { display: block; }
+  .view-wrapper .comment-wrap .bottom-left { margin-top: 20px; }
+  .view-wrapper .comment-wrap .bottom-left .input-wrap { width: calc(100% - 50px); }
+  .view-wrapper .comment-wrap .bottom-left .input-wrap div { width: 100%; }
+  .view-wrapper .comment-wrap .bottom-left .input-wrap input[type="text"] { width: calc(100% - 140px); }
+  .view-wrapper .comment-wrap .bottom-right { margin-top: 20px; }
+  .view-wrapper .comment-wrap .bottom-right a { width: calc((100% - 10px) / 2); margin: 0; }
+  .view-wrapper .sum-wrap { margin-top: 15px; }
+  .view-wrapper .sum-wrap .item { margin-left: 5px; } }
 #map { width: 100%; height: 500px; background: #d8d8d8; margin-top: 30px; }
 
 .addr { margin: 30px 0; font-size: 16px; font-weight: 500; letter-spacing: -0.13px; color: #000000; }
