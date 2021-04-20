@@ -120,16 +120,16 @@ textarea{
 		}
 	}
 	
-	input[type="radio"]:focus+label, input[type="checkbox"]:focus+label{
+	/*input[type="radio"]:focus+label, input[type="checkbox"]:focus+label{
 		border: 1px dotted #000;
 		//margin: -1px
-	}
+	}*/
 
 	input[type="radio"] + label{
 		display: inline-block;
 		position: relative;
 		padding-left:30px;
-        padding-right: 20px;
+        //padding-right: 20px;
 		cursor: pointer;
 		color:#666;
 		min-width:0;
@@ -200,7 +200,7 @@ textarea{
 	
 	.checks{
 		input[type="radio"] + label,input[type="checkbox"] + label{
-			padding-left: 30px;
+			padding-left: 25px;
 			font-size: 12px;
 			line-height: 20px;
 			&:before{
@@ -210,7 +210,7 @@ textarea{
 			}
 		}
 		input[type="radio"] + label{
-			margin-right: 30px;
+			margin-right: 5px;
 			&:last-of-type{
 				margin: 0;
 			}
