@@ -444,6 +444,9 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 @media screen and (max-width: 768px) { .h-mentor { padding-top: 10px; font-size: 20px; line-height: 32px; } }
 .view-wrapper { width: 100%; justify-content: center; margin-top: 30px; position: relative; }
 .view-wrapper .wrap { width: 100%; max-width: 1200px; display: flex; }
+.view-wrapper .wrap .left-items { position: relative; }
+.view-wrapper .wrap .left-items .ico-like { position: absolute; top: 0; right: 0; width: 50px; height: 50px; background: url("../_images/common/ico_like.png") no-repeat center; cursor: pointer; z-index: 2; }
+.view-wrapper .wrap .left-items .ico-like.on { background-image: url("../_images/common/ico_like_on.png"); }
 .view-wrapper .wrap .left-items .item { width: 470px; }
 .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow { display: flex; align-items: center; justify-content: center; margin-top: 30px; }
 .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination { padding: 0 30px; }
@@ -454,10 +457,21 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .view-wrapper .wrap .left-items .wrap { display: flex; justify-content: space-between; margin-top: 40px; }
 .view-wrapper .wrap .left-items .wrap a { width: calc((100% - 10px)  / 2); font-size: 18px; font-weight: 500; line-height: 50px; border-radius: 8px; text-align: center; border: 1px solid #000000; }
 .view-wrapper .wrap .left-items .wrap a:hover { color: #f94450; border-color: #f94450; }
-.view-wrapper .wrap .right-items { margin-left: 6.77vw; }
+.view-wrapper .wrap .right-items { margin-left: 6.77vw; width: calc(100% - 470px - 6.77vw); }
 .view-wrapper .wrap .right-items .item .title1 { font-size: 30px; font-weight: 300; letter-spacing: -1.03px; color: #000000; margin-bottom: 40px; }
 .view-wrapper .wrap .right-items .item .title2 { font-size: 14px; font-weight: 500; letter-spacing: -0.48px; color: #000000; margin-bottom: 10px; }
 .view-wrapper .wrap .right-items .item .subs { font-size: 14px; font-weight: 300; letter-spacing: -0.48px; color: #454545; line-height: 22px; margin-bottom: 20px; }
+.view-wrapper .wrap .right-items .program-title { font-size: 30px; font-weight: 300; letter-spacing: -1.03px; }
+.view-wrapper .wrap .right-items .program-option { margin-top: 30px; }
+.view-wrapper .wrap .right-items .program-option ul { margin-bottom: 10px; display: flex; flex-wrap: wrap; align-items: center; }
+.view-wrapper .wrap .right-items .program-option ul li { font-size: 24px; font-weight: 500; }
+.view-wrapper .wrap .right-items .program-option ul li:first-child { font-size: 16px; width: 100px; }
+.view-wrapper .wrap .right-items .program-option ul li:last-child { width: calc(100% - 100px); }
+.view-wrapper .wrap .right-items .program-option ul li input[type="text"], .view-wrapper .wrap .right-items .program-option ul li select { width: 200px; font-size: 14px; }
+.view-wrapper .wrap .right-items .program-option ul.price { margin-bottom: 30px; }
+.view-wrapper .wrap .right-items .btns { width: 100%; display: flex; justify-content: space-between; margin-top: 40px; }
+.view-wrapper .wrap .right-items .btns a { width: calc((100% - 20px) / 3); border: 1px solid #000; border-radius: 8px; text-align: center; line-height: 50px; }
+.view-wrapper .wrap .right-items .btns a.on { color: #f94450; border-color: #f94450; }
 .view-wrapper .comment-wrap { margin-top: 80px; }
 .view-wrapper .comment-wrap .title-wrap { display: flex; align-items: center; }
 .view-wrapper .comment-wrap .title-wrap .comment { font-size: 16px; font-weight: 500; letter-spacing: -0.55px; color: #000000; text-align: center; margin-right: 20px; }
@@ -477,17 +491,24 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .view-wrapper .sum-wrap { display: flex; margin-top: 30px; }
 .view-wrapper .sum-wrap .item { width: 170px; height: 110px; margin-left: 10px; }
 .view-wrapper .sum-wrap .item:first-child { margin-left: 0; }
+.view-wrapper .program-detail { margin-top: 150px; }
+.view-wrapper .program-detail img { width: 100%; }
 
-@media screen and (max-width: 960px) { .view-wrapper .wrap .left-items .item { width: 48.95vw; } }
+@media screen and (max-width: 960px) { .view-wrapper .wrap .left-items .item { width: 48.95vw; }
+  .view-wrapper .wrap .right-items .btns { display: block; margin-top: 40px; }
+  .view-wrapper .wrap .right-items .btns a { display: block; width: 100%; margin-bottom: 10px; }
+  .view-wrapper .program-detail { margin-top: 100px; } }
 @media screen and (max-width: 768px) { .view-wrapper .wrap { display: block; }
   .view-wrapper .wrap .left-items .item { width: 100%; }
   .view-wrapper .wrap .left-items .item img { width: 100%; }
   .view-wrapper .wrap .left-items .ui .swiper-wrap-arrow .swiper-pagination span { width: 10px; height: 10px; margin: 0 2px; }
   .view-wrapper .wrap .left-items .wrap { display: flex; justify-content: space-between; margin-top: 40px; }
   .view-wrapper .wrap .left-items .wrap a { font-size: 14px; line-height: 40px; }
-  .view-wrapper .wrap .right-items { margin-left: 0; margin-top: 40px; }
+  .view-wrapper .wrap .right-items { width: 100%; margin-left: 0; margin-top: 40px; }
   .view-wrapper .wrap .right-items .item .title1 { font-size: 24px; margin-bottom: 20px; }
   .view-wrapper .wrap .right-items .item .subs { font-size: 12px; line-height: 18px; margin-bottom: 20px; }
+  .view-wrapper .wrap .right-items .btns { display: flex; margin-top: 20px; }
+  .view-wrapper .wrap .right-items .btns a { width: calc((100% - 20px) / 3); line-height: 40px; font-size: 12px; }
   .view-wrapper .comment-wrap { margin-top: 40px; }
   .view-wrapper .comment-wrap .title-wrap .comment { font-size: 14px; }
   .view-wrapper .comment-wrap .title-wrap .star-wrap { display: flex; }
@@ -501,7 +522,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .view-wrapper .comment-wrap .bottom-right { margin-top: 20px; }
   .view-wrapper .comment-wrap .bottom-right a { width: calc((100% - 10px) / 2); margin: 0; }
   .view-wrapper .sum-wrap { margin-top: 15px; }
-  .view-wrapper .sum-wrap .item { margin-left: 5px; } }
+  .view-wrapper .sum-wrap .item { margin-left: 5px; }
+  .view-wrapper .program-detail { margin-top: 50px; } }
 #map { width: 100%; height: 500px; background: #d8d8d8; margin-top: 30px; }
 
 .addr { margin: 30px 0; font-size: 16px; font-weight: 500; letter-spacing: -0.13px; color: #000000; }
