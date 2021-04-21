@@ -66,14 +66,14 @@ input[type="button"]{
 	@include appearance(none);
 }
 
-a.file{
+/*a.file{
 	background: url(../_images/common/btn_file.png) no-repeat 10px center;
 	line-height: 28px;
 	color: $primary;
 	padding-left: 35px;
 	padding-right: 10px;
 	display: inline-block;
-}
+}*/
 
 textarea{
 	width: 100%;

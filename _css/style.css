@@ -12,8 +12,14 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="email
 @media screen and (max-width: 960px) { input[type="text"], input[type="password"], input[type="tel"], input[type="email"] { line-height: 38px; height: 40px; text-indent: 10px; font-size: 16px; } }
 input[type="button"] { height: 30px; line-height: 30px; background: #f94450; color: #fff; text-align: center; min-width: 130px; border: none; font-size: 14px; cursor: pointer; margin: 0 2px; -moz-appearance: none; -webkit-appearance: none; }
 
-a.file { background: url(../_images/common/btn_file.png) no-repeat 10px center; line-height: 28px; color: #f94450; padding-left: 35px; padding-right: 10px; display: inline-block; }
-
+/*a.file{
+	background: url(../_images/common/btn_file.png) no-repeat 10px center;
+	line-height: 28px;
+	color: $primary;
+	padding-left: 35px;
+	padding-right: 10px;
+	display: inline-block;
+}*/
 textarea { width: 100%; height: 150px; padding: 20px; border: 1px solid #e5e5e5; color: #666; line-height: 24px; vertical-align: baseline; -moz-appearance: none; -webkit-appearance: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @media screen and (max-width: 960px) { a.file { font-size: 12px; padding-left: 30px; }
