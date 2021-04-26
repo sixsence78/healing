@@ -367,16 +367,23 @@ h3{
     justify-content: center;
     margin-top: 100px;
     ul{
+        padding: 0 30px;
+        width: 100%;
+        max-width: 1170px;
+        justify-content: space-between;
         display: flex;
         li{
-            width: 108px;
+            width: calc((100% - 320px) / 7);
             font-size: 16px;
             color: #454545;
             text-align: center;
-            margin: 0 33px;
             letter-spacing: -0.55px;
             img{
                 margin-bottom: 10px;
+            }
+            em{
+                display: block;
+                width: 100%;
             }
         }
     }
@@ -675,6 +682,8 @@ h3{
             }
         }
     }
+    
+    
     #contents{
         .grid-wrapper{
             .swiper-title-wrap{
@@ -777,16 +786,22 @@ h3{
     }
  
     .sec-category{
+        justify-content: center;
         margin-top: 50px;
         ul{
+            justify-content: center;
             padding: 0 20px;
-            justify-content: space-between;
+            flex-wrap: wrap;
             li{
-                width: calc((100% - 40px) / 5);
+                width: calc((100% - 30px) / 4);
                 font-size: 12px;
-                margin: 0;
+                margin: 10px 0;
                 img{
                     margin-bottom: 10px;
+                    width: 80%;
+                }
+                em{
+                    display: block;
                     width: 100%;
                 }
             }
