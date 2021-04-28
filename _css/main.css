@@ -113,9 +113,10 @@ header .mobile-gnb-wrapper { display: none; }
 footer { background-color: #012c3d; display: flex; justify-content: center; padding: 40px 0; margin-top: 100px; }
 footer .wrap { width: 100%; max-width: 1200px; padding: 0 15px; display: flex; align-items: center; }
 footer .wrap .footer_ci { width: 120px; height: 52px; background: url("../_images/main/footer-ci.png") no-repeat 0 0; }
-footer .wrap .txt_wrap { margin-left: 80px; font-size: 14px; color: #ccc; font-weight: 300; }
+footer .wrap .txt_wrap { margin-left: 80px; font-size: 14px; color: #ccc; font-weight: 200; letter-spacing: -0.6px; }
 footer .wrap .txt_wrap .copy_wrap { align-items: center; height: 24px; display: flex; }
 footer .wrap .txt_wrap .copy_wrap p { border-left: 1px solid #979797; margin-left: 10px; padding-left: 10px; }
+footer .wrap .txt_wrap .copy_wrap p a { text-decoration: underline; color: #ffffff; }
 footer .wrap .txt_wrap .copy_wrap p:first-child { border: none; margin: 0; padding: 0; }
 footer .mobile-footer { display: none; }
 

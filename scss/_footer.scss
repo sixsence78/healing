@@ -21,12 +21,17 @@ footer{
             margin-left: 80px;
             font-size:14px;
             color: #ccc;                
-            font-weight: 300;
+            font-weight: 200;
+            letter-spacing: -0.6px;
             .copy_wrap{                    
                 align-items: center;
                 height: 24px;
                 display: flex;
                 p{
+                    a{
+                        text-decoration: underline;
+                        color: #ffffff;
+                    }
                     border-left: 1px solid #979797;
                     margin-left: 10px;
                     padding-left: 10px;
