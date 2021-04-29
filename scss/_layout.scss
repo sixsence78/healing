@@ -28,3 +28,95 @@
 	color: $primary !important;
 }
 
+.brain-btn{
+    display: flex;
+    justify-content: space-between;
+    a{
+        width: calc((100% - 30px) / 2);
+        border: 4px solid #000;
+        line-height: 92px;
+        text-indent: 30px;
+        font-size: 24px;
+        font-weight: 300;
+        &.brain{
+            background: url("../_images/common/ico-brain.png") no-repeat right center;
+        }
+        &.personal{
+            background: url("../_images/common/ico-personal.png") no-repeat right center;
+        }
+        &:hover{
+            border-color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .brain-btn{
+        display: block;
+        a{
+            display: block;
+            width: 100%;
+            border: 2px solid #000;
+            line-height: 40px;
+            text-indent: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            background-size: contain !important;
+        }
+    } 
+}
+
+.check-list{
+    border-top: 2px solid #000;
+    border-bottom: 1px solid $lineColor;
+    padding: 10px 0;
+    ul{
+        padding: 15px 0;
+        display: flex;
+        li{
+            width: 50%;
+            font-size: 16px;
+            text-indent: 10px;
+            font-weight: 500;
+            input[type="radio"] + label{
+                 text-indent: 0; 
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .check-list{
+        ul{
+            padding: 15px 0;
+            display: block;
+            li{
+                width: 100%;
+                font-size: 12px;
+                margin-bottom: 20px;
+                input[type="radio"] + label{
+                    font-size: 12px;
+                }
+            }
+        }
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
