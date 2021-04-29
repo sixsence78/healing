@@ -82,6 +82,58 @@
                 }
             }
         }
+        .loading-text{
+            text-align: center;
+            font-size: 30px;
+            color: #454545;
+            font-weight: 300;
+            line-height: 42px;
+            letter-spacing: -1.27px;
+            strong{
+                font-weight: 500;
+            }
+        }
+        .number{
+            font-size: 60px;
+            color: $primary;
+            font-weight: 500;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .text{
+            text-align: center;
+            font-size: 24px;
+            color: #454545;
+            line-height: 42px;
+            margin-top: 40px;
+            font-weight: 300;
+            letter-spacing: -1.27px;
+        }
+        &.loading{
+            height: 360px;
+            .image{
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+            }
+        }
+        .btns{
+            margin-top: 30px;
+            a{
+                display: block;
+                line-height: 48px;
+                border: 1px solid $lineColor;
+                border-radius: 8px;
+                font-size: 16px;
+                color: #454545;
+                text-align:center;
+                margin-bottom: 10px;
+                &:hover{
+                    border-color: $primary;
+                    color: $primary;
+                }
+            }
+        }
 	}
 }
 
@@ -116,6 +168,18 @@
                     font-size: 12px;
                     line-height: 40px;
                 }
+            }
+            .loading-text{
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .number{
+                font-size: 40px;
+            }
+            .text{
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 20px;
             }
         }
     }

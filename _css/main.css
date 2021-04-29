@@ -64,6 +64,22 @@ input[type="file"]::-ms-browse { color: #fff; border: 0; background: #343f4e; wi
   .mobile-only { display: block !important; } }
 .point { color: #f94450 !important; }
 
+.brain-btn { display: flex; justify-content: space-between; }
+.brain-btn a { width: calc((100% - 30px) / 2); border: 4px solid #000; line-height: 92px; text-indent: 30px; font-size: 24px; font-weight: 300; }
+.brain-btn a.brain { background: url("../_images/common/ico-brain.png") no-repeat right center; }
+.brain-btn a.personal { background: url("../_images/common/ico-personal.png") no-repeat right center; }
+.brain-btn a:hover { border-color: #f94450; }
+
+@media screen and (max-width: 768px) { .brain-btn { display: block; }
+  .brain-btn a { display: block; width: 100%; border: 2px solid #000; line-height: 40px; text-indent: 20px; font-size: 14px; margin-bottom: 10px; background-size: contain !important; } }
+.check-list { border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; padding: 10px 0; }
+.check-list ul { padding: 15px 0; display: flex; }
+.check-list ul li { width: 50%; font-size: 16px; text-indent: 10px; font-weight: 500; }
+.check-list ul li input[type="radio"] + label { text-indent: 0; font-size: 14px; }
+
+@media screen and (max-width: 768px) { .check-list ul { padding: 15px 0; display: block; }
+  .check-list ul li { width: 100%; font-size: 12px; margin-bottom: 20px; }
+  .check-list ul li input[type="radio"] + label { font-size: 12px; } }
 /*  GNB  */
 header { position: sticky; top: 0; z-index: 100; }
 header .util-wrapper { width: 100%; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: center; background: #fff; }
@@ -137,6 +153,15 @@ footer .mobile-footer { display: none; }
 #modal .modal-wrap .sns-btn a { width: calc((100% - 10px) / 2); color: #454545; text-align: center; line-height: 50px; border-radius: 8px; }
 #modal .modal-wrap .sns-btn a.kakao { background: #ffe401; }
 #modal .modal-wrap .sns-btn a.naver { background: #0fcf73; }
+#modal .modal-wrap .loading-text { text-align: center; font-size: 30px; color: #454545; font-weight: 300; line-height: 42px; letter-spacing: -1.27px; }
+#modal .modal-wrap .loading-text strong { font-weight: 500; }
+#modal .modal-wrap .number { font-size: 60px; color: #f94450; font-weight: 500; margin-top: 10px; text-align: center; }
+#modal .modal-wrap .text { text-align: center; font-size: 24px; color: #454545; line-height: 42px; margin-top: 40px; font-weight: 300; letter-spacing: -1.27px; }
+#modal .modal-wrap.loading { height: 360px; }
+#modal .modal-wrap.loading .image { position: absolute; bottom: 50px; right: 50px; }
+#modal .modal-wrap .btns { margin-top: 30px; }
+#modal .modal-wrap .btns a { display: block; line-height: 48px; border: 1px solid #e5e5e5; border-radius: 8px; font-size: 16px; color: #454545; text-align: center; margin-bottom: 10px; }
+#modal .modal-wrap .btns a:hover { border-color: #f94450; color: #f94450; }
 
 @media screen and (max-width: 960px) { #modal .modal-wrap { width: 90vw; padding: 20px; }
   #modal .modal-wrap .title { margin-top: 30px; font-size: 20px; }
@@ -145,7 +170,10 @@ footer .mobile-footer { display: none; }
   #modal .modal-wrap .btns .solid { line-height: 40px; font-size: 14px; }
   #modal .modal-wrap .btns .flex a { font-size: 12px; }
   #modal .modal-wrap .sns-btn { margin-top: 30px; }
-  #modal .modal-wrap .sns-btn a { font-size: 12px; line-height: 40px; } }
+  #modal .modal-wrap .sns-btn a { font-size: 12px; line-height: 40px; }
+  #modal .modal-wrap .loading-text { font-size: 20px; line-height: 32px; }
+  #modal .modal-wrap .number { font-size: 40px; }
+  #modal .modal-wrap .text { font-size: 16px; line-height: 28px; margin-top: 20px; } }
 .main-banner { width: 100%; position: relative; display: flex; justify-content: center; }
 .main-banner .left { position: absolute; left: 0; top: 0; background: #33dc9e; height: 450px; width: 67.81vw; z-index: -1; }
 .main-banner .wrap { width: 100%; max-width: 1200px; padding: 0 15px; height: 530px; position: relative; }
