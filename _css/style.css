@@ -314,6 +314,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .inputs-wrap ul li p a.add { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-plus.png") no-repeat center; margin-left: 10px; align-self: flex-start; }
 .inputs-wrap ul li p span { margin-left: 10px; }
 .inputs-wrap ul li p em input[type="text"] { display: block; margin-bottom: 10px; }
+.inputs-wrap ul li p em.flex { display: flex; }
+.inputs-wrap ul li p em.flex input[type="text"] { display: inline; }
 
 @media screen and (max-width: 960px) { .inputs-wrap { padding-top: 20px; }
   .inputs-wrap ul { margin-bottom: 20px; }
@@ -321,9 +323,11 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .inputs-wrap ul li:first-child { font-size: 12px; width: 100px; }
   .inputs-wrap ul li input[type="text"], .inputs-wrap ul li input[type="password"] { width: 100%; }
   .inputs-wrap ul li p { flex-wrap: wrap; }
-  .inputs-wrap ul li p input[type="text"], .inputs-wrap ul li p input[type="password"], .inputs-wrap ul li p input[type="password"] { width: calc(100% - 130px); }
+  .inputs-wrap ul li p input[type="text"], .inputs-wrap ul li p input[type="password"] { width: calc(100% - 130px); }
   .inputs-wrap ul li p a { width: 120px; font-size: 12px; }
   .inputs-wrap ul li p input[type="checkbox"] + label { margin-bottom: 10px; }
+  .inputs-wrap ul li p em { width: calc(100% - 50px); }
+  .inputs-wrap ul li p em input[type="text"], .inputs-wrap ul li p em input[type="password"] { width: 100%; }
   .inputs-wrap ul li select { width: 100%; } }
 .main-banner { width: 100%; position: relative; display: flex; justify-content: center; }
 .main-banner .left { position: absolute; left: 0; top: 0; background: #33dc9e; height: 450px; width: 67.81vw; z-index: -1; }

@@ -235,6 +235,12 @@ h3{
                         display: block;
                         margin-bottom: 10px;
                     }
+                    &.flex{
+                        display: flex;
+                        input[type="text"]{
+                            display: inline;
+                        }
+                    }
                 }
             } 
         }
@@ -259,7 +265,7 @@ h3{
                 }
                 p{
                     flex-wrap: wrap;
-                    input[type="text"],input[type="password"],input[type="password"]{
+                    input[type="text"],input[type="password"]{
                         width: calc(100% - 130px);
                     }
                     a{
@@ -268,6 +274,11 @@ h3{
                     }
                     input[type="checkbox"] + label{
                         margin-bottom: 10px;
+                    }
+                    em{
+                         width: calc(100% - 50px); input[type="text"],input[type="password"]{
+                            width: 100%;
+                        }
                     }
                 }
                 select{
@@ -2076,7 +2087,7 @@ h3{
 
 @media screen and (max-width:768px){
     
-        .check-list{
+    .check-list{
         ul{
             padding: 15px 0;
             display: block;
