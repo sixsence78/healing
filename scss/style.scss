@@ -1199,6 +1199,61 @@ h3{
                     }
                 }
              }
+            .program-title{		
+                font-size: 30px;		
+                font-weight: 300;		
+                letter-spacing: -1.03px;
+                
+            }
+            .program-option{
+                margin-top: 50px;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    &.price{
+                        margin-bottom: 40px;
+                    }
+                    li{
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: -0.33px;
+                        &:first-child{
+                            width: 100px;
+                        }
+                        &:last-child{
+                            font-size: 24px;
+                            font-weight: 500px;
+                        }
+                        select{
+                            width: 200px;
+                            font-size: 14px;
+                            color: #454545;
+                        }
+                        input[type="text"]{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            .btns{
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    width: calc((100% - 20px) / 3);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border: 1px solid #000000;
+                    &:hover{
+                        color: $primary;
+                        border-color: $primary;
+                    }
+                }
+            }
         }
     }
     .view-item{
@@ -1357,11 +1412,13 @@ h3{
             .right-items{
                .btns{
                     display: block;
-                    margin-top: 40px;
+                    margin-top: 20px;
                     a{
                         display: block;
                         width: 100%;
                         margin-bottom: 10px;
+                        font-size: 12px;
+                        line-height: 40px;
                     }
                 }  
             }
@@ -1416,6 +1473,23 @@ h3{
                         }
                     }
                  }
+                .program-option{
+                    margin-top: 30px;
+                    ul{
+                        &.price{
+                            margin-bottom: 20px;
+                        }
+                        li{
+                            font-size: 14px;
+                            &:first-child{
+                                width: 100px;
+                            }
+                            &:last-child{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }            
         }
         
