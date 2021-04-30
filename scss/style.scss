@@ -1337,8 +1337,15 @@ h3{
             }
             .star-wrap{
                 display: flex;
-                img{
+                em{
+                    width: 20px;
+                    height: 20px;
+                    background: url("../_images/common/icon-star.png") no-repeat center;
                     margin-right: 5px;
+                    cursor: pointer;
+                    &.on,&:hover{
+                        background-image: url("../_images/common/icon-star-on.png");
+                    }
                 }
             }                        
         }
@@ -1545,14 +1552,7 @@ h3{
             .title-wrap{
                 .comment{
                     font-size: 14px;
-                }
-                .star-wrap{
-                    display: flex;
-                    img{
-                        width: 20px;
-                        margin-right: 5px;
-                    }
-                }                        
+                }                       
             }
             textarea{
                 height: 150px;
