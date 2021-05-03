@@ -56,9 +56,36 @@ $(function(){
 	/*   FOOTER 로드   */
 	$("footer").load('../_inc/footer.html');
 	
-	////////////////////     LNB     ////////////////////
+	////////////////////     별점     ////////////////////
 	
-	/*     SNS 공유     */
+	$(document).on("mouseover",".comment-wrap .star-wrap em",function(){
+        
+       $(this).closest(".star-wrap").find("em").removeClass("act");
+        var overNum = $(this).index();
+        
+        for(i=0; i<=overNum; i++){
+            $(this).closest(".star-wrap").find("em").eq(i).addClass("act");
+        }
+        
+    });
+    
+    $(document).on("mouseleave",".comment-wrap .star-wrap",function(){
+        
+        $(this).find("em").removeClass("act");
+        
+    });
+    
+    
+    $(document).on("click",".comment-wrap .star-wrap em",function(){
+        
+       $(this).closest(".star-wrap").find("em").removeClass("on");
+        var overNum = $(this).index();
+        
+        for(i=0; i<=overNum; i++){
+            $(this).closest(".star-wrap").find("em").eq(i).addClass("on");
+        }
+        
+    });
 	
 	
 	

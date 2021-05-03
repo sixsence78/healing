@@ -1343,7 +1343,7 @@ h3{
                     background: url("../_images/common/icon-star.png") no-repeat center;
                     margin-right: 5px;
                     cursor: pointer;
-                    &.on,&:hover{
+                    &.on,&:hover,&.act{
                         background-image: url("../_images/common/icon-star-on.png");
                     }
                 }
@@ -2103,3 +2103,7 @@ h3{
     }  
 }
 
+.required:after { 
+    content: ' *'; 
+    color: #ed3737; 
+}

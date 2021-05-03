@@ -517,7 +517,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .view-wrapper .comment-wrap .title-wrap .comment { font-size: 16px; font-weight: 500; letter-spacing: -0.55px; color: #000000; text-align: center; margin-right: 20px; }
 .view-wrapper .comment-wrap .title-wrap .star-wrap { display: flex; }
 .view-wrapper .comment-wrap .title-wrap .star-wrap em { width: 20px; height: 20px; background: url("../_images/common/icon-star.png") no-repeat center; margin-right: 5px; cursor: pointer; }
-.view-wrapper .comment-wrap .title-wrap .star-wrap em.on, .view-wrapper .comment-wrap .title-wrap .star-wrap em:hover { background-image: url("../_images/common/icon-star-on.png"); }
+.view-wrapper .comment-wrap .title-wrap .star-wrap em.on, .view-wrapper .comment-wrap .title-wrap .star-wrap em:hover, .view-wrapper .comment-wrap .title-wrap .star-wrap em.act { background-image: url("../_images/common/icon-star-on.png"); }
 .view-wrapper .comment-wrap textarea { margin-top: 30px; }
 .view-wrapper .comment-wrap .bottom-wrap { display: flex; justify-content: space-between; flex-direction: row; }
 .view-wrapper .comment-wrap .bottom-left { display: flex; order: 1; }
@@ -669,3 +669,4 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 @media screen and (max-width: 768px) { .check-list ul { padding: 15px 0; display: block; }
   .check-list ul li { width: 100%; font-size: 12px; margin-bottom: 20px; }
   .check-list ul li input[type="radio"] + label { font-size: 12px; } }
+.required:after { content: ' *'; color: #ed3737; }
