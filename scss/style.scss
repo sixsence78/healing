@@ -634,7 +634,7 @@ h3{
                 }
             }
             &.second{
-                background: url("../_images/main/open.png")no-repeat top right $primary;
+                background: url("../_images/main/open.png")no-repeat top right #9DD2D4;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -1938,6 +1938,9 @@ h3{
             &.left{
                 margin-left: 10px;
             }
+        }
+        &.right{
+            margin-left: auto;
         }
     }
 }

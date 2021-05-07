@@ -387,7 +387,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 #contents .grid-wrapper .swiper-title-wrap .swiper-title { margin-left: 70px; margin-top: 70px; }
 #contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { height: 71px; font-size: 48px; font-weight: 500; color: #fff; position: relative; }
 #contents .grid-wrapper .swiper-title-wrap .swiper-title p { font-size: 20px; font-weight: 300; color: #fff; line-height: 28px; }
-#contents .grid-wrapper .swiper-title-wrap.second { background: url("../_images/main/open.png") no-repeat top right #f94450; top: 0; left: 0; display: flex; justify-content: flex-end; }
+#contents .grid-wrapper .swiper-title-wrap.second { background: url("../_images/main/open.png") no-repeat top right #9DD2D4; top: 0; left: 0; display: flex; justify-content: flex-end; }
 #contents .grid-wrapper .swiper-title-wrap.second .swiper-title { width: 100%; max-width: 786px; padding: 0 15px; }
 #contents .grid-wrapper.main .wrap .items { flex-wrap: nowrap; }
 #contents .grid-wrapper.main .wrap .items .item { margin-bottom: 0; }
@@ -634,6 +634,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .h-wrapper a.solid { border: none; color: #fff; background: #f94450; }
 .h-wrapper a.down-load { background: #33dc9e; color: #fff; margin-left: auto; border: none; }
 .h-wrapper a.down-load.left { margin-left: 10px; }
+.h-wrapper a.right { margin-left: auto; }
 
 @media screen and (max-width: 768px) { .h-wrapper { margin-top: 20px; margin-bottom: 20px; flex-wrap: wrap; justify-content: space-between; }
   .h-wrapper h3 { width: 100%; margin-bottom: 20px; }
