@@ -11,6 +11,10 @@ $(function(){
         nextEl: '.ui .ui-next',
         prevEl: '.ui .ui-prev',
       },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
     loop: true,
     on:{
             slideChangeTransitionEnd:function(){
