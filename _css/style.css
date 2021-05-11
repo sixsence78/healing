@@ -273,11 +273,13 @@ footer .mobile-footer { display: none; }
   #modal .modal-wrap .number { font-size: 40px; }
   #modal .modal-wrap .text { font-size: 16px; line-height: 28px; margin-top: 20px; } }
 .sub-top { width: 100%; display: flex; justify-content: center; position: relative; height: 266px; }
-.sub-top .left-box { width: 61.56vw; height: 220px; background: #f94450; position: absolute; left: 0; z-index: -1; }
-.sub-top .right-box { width: 49.06vw; height: 140px; background: url("../_images/common/sub-top01.png") no-repeat; position: absolute; top: 126px; right: 0; box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25); }
-.sub-top .text-wrap { width: 100%; max-width: 1200px; padding: 0 15px; }
+.sub-top .left-box { width: 61.56vw; height: 220px; background: #dedede; position: absolute; left: 0; z-index: -1; }
+.sub-top .right-box { width: 49.06vw; height: 140px; background: url("../_images/common/sub-top01.png") no-repeat #64A6DA; position: absolute; top: 126px; right: 0; box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25); }
+.sub-top .text-wrap { display: none; width: 100%; max-width: 1200px; padding: 0 15px; }
 .sub-top .text-wrap .title { height: 45px; font-size: 30px; font-weight: 500; color: #fff; margin-top: 50px; margin-left: 200px; letter-spacing: -0.2px; }
 .sub-top .text-wrap .sub-title { height: 48px; font-size: 16px; font-weight: 300; color: #fff; margin-top: 5px; margin-left: 200px; line-height: normal; letter-spacing: -0.11px; }
+
+.fasta .sub-top .right-box { background: url("../_images/common/sub-top01.png") no-repeat; }
 
 .program .sub-top .right-box { background-image: url("../_images/common/sub_top_progara.png"); }
 
@@ -331,7 +333,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .inputs-wrap ul li p em input[type="text"], .inputs-wrap ul li p em input[type="password"] { width: 100%; }
   .inputs-wrap ul li select { width: 100%; } }
 .main-banner { width: 100%; position: relative; display: flex; justify-content: center; }
-.main-banner .left { position: absolute; left: 0; top: 0; background: #33dc9e; height: 450px; width: 67.81vw; z-index: -1; }
+.main-banner .left { position: absolute; left: 0; top: 0; background: #64A6DA; height: 450px; width: 67.81vw; z-index: -1; }
 .main-banner .wrap { width: 100%; max-width: 1200px; padding: 0 15px; height: 530px; position: relative; }
 .main-banner .wrap .text-wrap { position: relative; }
 .main-banner .wrap .text-wrap .item { position: absolute; left: 0; top: 120px; opacity: 0; }
@@ -384,11 +386,11 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 #contents .grid-wrapper .wrap .swiper-wrap-arrow .swiper-pagination span.swiper-pagination-bullet-active { opacity: 1; }
 #contents .grid-wrapper .wrap.swiper-container .swiper-wrapper { height: auto; }
 #contents .grid-wrapper .wrap.swiper-container .swiper-wrapper .swiper-slide { margin: 0; }
-#contents .grid-wrapper .swiper-title-wrap { margin-top: 50px; width: 61.56vw; height: 400px; background: url("../_images/main/oneday.png") no-repeat top right #33dc9e; position: absolute; top: 0; right: 0; z-index: -1; box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25); }
+#contents .grid-wrapper .swiper-title-wrap { margin-top: 50px; width: 61.56vw; height: 400px; background: #64A6DA; position: absolute; top: 0; right: 0; z-index: -1; box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25); }
 #contents .grid-wrapper .swiper-title-wrap .swiper-title { margin-left: 70px; margin-top: 70px; }
-#contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { height: 71px; font-size: 48px; font-weight: 500; color: #fff; position: relative; }
+#contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { height: 71px; font-size: 36px; font-weight: 500; color: #fff; position: relative; margin-top: 0; }
 #contents .grid-wrapper .swiper-title-wrap .swiper-title p { font-size: 20px; font-weight: 300; color: #fff; line-height: 28px; }
-#contents .grid-wrapper .swiper-title-wrap.second { background: url("../_images/main/open.png") no-repeat top right #9DD2D4; top: 0; left: 0; display: flex; justify-content: flex-end; }
+#contents .grid-wrapper .swiper-title-wrap.second { background: #64A6DA; top: 0; left: 0; display: flex; justify-content: flex-end; }
 #contents .grid-wrapper .swiper-title-wrap.second .swiper-title { width: 100%; max-width: 786px; padding: 0 15px; }
 #contents .grid-wrapper.main .wrap .items { flex-wrap: nowrap; }
 #contents .grid-wrapper.main .wrap .items .item { margin-bottom: 0; }
@@ -409,8 +411,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   .main-banner .wrap .text-wrap .item .main-slogal { display: none; }
   #contents .grid-wrapper .swiper-title-wrap { height: 33.33vw; }
   #contents .grid-wrapper .swiper-title-wrap .swiper-title { margin: 8.33vw 0 0 8.33vw; }
-  #contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { font-size: 4vw; height: auto; }
-  #contents .grid-wrapper .swiper-title-wrap .swiper-title p { font-size: 2vw; line-height: 3vw; margin-top: 2vw; }
+  #contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { height: auto; }
+  #contents .grid-wrapper .swiper-title-wrap .swiper-title p { margin-top: 2vw; }
   #contents .grid-wrapper .wrap .items.swiper-items { margin-top: 26.66vw; }
   #contents .grid-wrapper .wrap .items .item { width: calc((100% - 60px) / 3); margin-bottom: 40px; }
   #contents .grid-wrapper .wrap .items .item:nth-child(4n+1) { margin-left: 30px; }
@@ -434,8 +436,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   #contents .grid-wrapper { margin-top: 40px; }
   #contents .grid-wrapper .swiper-title-wrap { margin-top: 0; width: 78.88vw; max-height: 280px; height: 56.94vw; }
   #contents .grid-wrapper .swiper-title-wrap .swiper-title { margin: 30px 0 0 30px; }
-  #contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { font-size: 4vw; height: auto; }
-  #contents .grid-wrapper .swiper-title-wrap .swiper-title p { font-size: 2vw; line-height: 3vw; margin-top: 2vw; padding-right: 20px; }
+  #contents .grid-wrapper .swiper-title-wrap .swiper-title h2 { font-size: 20px; height: auto; margin-bottom: 0; }
+  #contents .grid-wrapper .swiper-title-wrap .swiper-title p { font-size: 12px; line-height: 20px; margin-top: 10px; padding-right: 20px; }
   #contents .grid-wrapper .wrap { padding: 0 20px; }
   #contents .grid-wrapper .wrap .title-wrap { display: block; }
   #contents .grid-wrapper .wrap .title-wrap h2 { font-size: 20px; }

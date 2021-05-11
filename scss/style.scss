@@ -24,7 +24,7 @@
     .left-box{
         width: 61.56vw;
         height: 220px;
-        background: $primary;
+        background: #dedede;
         position: absolute;
         left: 0;
         z-index: -1;
@@ -32,13 +32,14 @@
     .right-box{
         width: 49.06vw;
         height: 140px;
-        background: url("../_images/common/sub-top01.png")no-repeat;
+        background: url("../_images/common/sub-top01.png")no-repeat #64A6DA;
         position: absolute;
         top: 126px;
         right: 0;
         box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25);
     }
     .text-wrap{
+        display: none;
         width: 100%;
         max-width: 1200px;
         padding: 0 15px;
@@ -67,6 +68,13 @@
 
 ////////////////////     RIGHT TOP     ////////////////////
 
+.fasta{
+    .sub-top{
+        .right-box{
+            background: url("../_images/common/sub-top01.png") no-repeat;
+        }
+    }
+}
 
 .program{
     .sub-top{
@@ -310,7 +318,7 @@ h3{
         position: absolute;
         left: 0;
         top: 0;
-        background: $point;
+        background: #64A6DA;
         height: 450px;
         width: 67.81vw;
         z-index: -1;
@@ -617,7 +625,7 @@ h3{
             margin-top: 50px;
             width: 61.56vw;
             height: 400px;
-            background: url("../_images/main/oneday.png")no-repeat top right $point;
+            background: #64A6DA;
             position: absolute;
             top: 0;
             right: 0;
@@ -628,10 +636,11 @@ h3{
                 margin-top: 70px;
                 h2{
                     height: 71px;
-                    font-size: 48px;
+                    font-size: 36px;
                     font-weight: 500;
                     color: #fff;
                     position: relative;
+                    margin-top: 0;
 
                 }
                 p{
@@ -642,7 +651,7 @@ h3{
                 }
             }
             &.second{
-                background: url("../_images/main/open.png")no-repeat top right #9DD2D4;
+                background: #64A6DA;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -766,12 +775,12 @@ h3{
                 .swiper-title{
                     margin: 8.33vw 0 0 8.33vw;
                     h2{
-                        font-size: 4vw;
+                        //font-size: 4vw;
                         height: auto;
                     }
                     p{
-                        font-size: 2vw;
-                        line-height: 3vw;
+                        //font-size: 2vw;
+                        //line-height: 3vw;
                         margin-top: 2vw;
                     }
                 }
@@ -896,13 +905,14 @@ h3{
                 .swiper-title{
                     margin: 30px 0 0 30px;
                     h2{
-                        font-size: 4vw;
+                        font-size: 20px;
                         height: auto;
+                        margin-bottom: 0;
                     }
                     p{
-                        font-size: 2vw;
-                        line-height: 3vw;
-                        margin-top: 2vw;
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-top: 10px;
                         padding-right: 20px;
                     }
                 }
