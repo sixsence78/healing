@@ -313,8 +313,8 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 .inputs-wrap ul li p { display: flex; width: 100%; align-items: center; }
 .inputs-wrap ul li p.point { margin-top: 10px; }
 .inputs-wrap ul li p a { width: 130px; background: #dedede; color: #454545; font-size: 14px; letter-spacing: -0.59px; text-align: center; line-height: 40px; margin-left: 10px; }
-.inputs-wrap ul li p a.add { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-plus.png") no-repeat center; margin-left: 10px; align-self: flex-start; }
-.inputs-wrap ul li p a.minus { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-minus.png") no-repeat center; margin-left: 10px; align-self: flex-start; }
+.inputs-wrap ul li p .add { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-plus.png") no-repeat center; margin-left: 10px; align-self: flex-start; }
+.inputs-wrap ul li p .minus { width: 40px; height: 40px; border: 1px solid #000; background: url("../_images/common/icon-minus.png") no-repeat center; margin-left: 10px; align-self: flex-start; }
 .inputs-wrap ul li p span { margin-left: 10px; }
 .inputs-wrap ul li p em input[type="text"] { display: block; margin-bottom: 10px; }
 .inputs-wrap ul li p em.flex { display: flex; }
