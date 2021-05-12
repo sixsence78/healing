@@ -279,7 +279,7 @@ footer .mobile-footer { display: none; }
 .sub-top .text-wrap .title { height: 45px; font-size: 30px; font-weight: 500; color: #fff; margin-top: 50px; margin-left: 200px; letter-spacing: -0.2px; }
 .sub-top .text-wrap .sub-title { height: 48px; font-size: 16px; font-weight: 300; color: #fff; margin-top: 5px; margin-left: 200px; line-height: normal; letter-spacing: -0.11px; }
 
-.fasta .sub-top .right-box { background: url("../_images/common/sub-top01.png") no-repeat; }
+.fasta .sub-top .right-box { background-image: url("../_images/common/sub-top01.png"); background-color: #fff; }
 
 .program .sub-top .right-box { background-image: url("../_images/common/sub_top_progara.png"); }
 
@@ -295,7 +295,7 @@ footer .mobile-footer { display: none; }
 
 @media screen and (max-width: 960px) { .sub-top { height: calc(20vw + 20px); }
   .sub-top .left-box { width: 90vw; height: 20vw; }
-  .sub-top .right-box { width: 90vw; height: 20vw; background-size: contain; background-position: 20px 30%; background-color: #33dc9e; top: 20px; }
+  .sub-top .right-box { width: 90vw; height: 20vw; background-size: contain; background-position: 20px 30%; top: 20px; }
   .sub-top .text-wrap { display: none; } }
 h2 { font-size: 30px; font-weight: 300; letter-spacing: -0.25px; color: #000; margin-top: 60px; }
 

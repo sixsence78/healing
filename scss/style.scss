@@ -71,7 +71,8 @@
 .fasta{
     .sub-top{
         .right-box{
-            background: url("../_images/common/sub-top01.png") no-repeat;
+            background-image: url("../_images/common/sub-top01.png");
+            background-color: #fff;
         }
     }
 }
@@ -137,7 +138,6 @@
             height: 20vw;
             background-size: contain;
             background-position: 20px 30%;
-            background-color: $point;
             top: 20px;                      
         }
         .text-wrap{
