@@ -367,7 +367,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
 #contents .grid-wrapper .wrap .items .item .btn-buy:hover span { display: flex; }
 #contents .grid-wrapper .wrap .items .item .btn-buy span { border-radius: 16px; position: absolute; display: none; width: 100%; height: 100%; justify-content: center; align-items: center; font-size: 20px; font-weight: 500; color: #ffffff; background: rgba(0, 0, 0, 0.5); }
 #contents .grid-wrapper .wrap .items .item:nth-child(4n+1) { margin-left: 0; }
-#contents .grid-wrapper .wrap .items .item img { width: 100%; }
+#contents .grid-wrapper .wrap .items .item img { width: 100%; height: 180px; }
 #contents .grid-wrapper .wrap .items .item .title { display: flex; font-size: 18px; color: #000; letter-spacing: -0.42px; font-weight: 500; margin-top: 15px; white-space: nowrap; word-break: break-all; overflow: hidden; text-overflow: ellipsis; }
 #contents .grid-wrapper .wrap .items .item .subs { margin-top: 10px; font-size: 16px; letter-spacing: -0.25px; color: #454545; line-height: 24px; display: -webkit-box; white-space: normal; -webkit-line-clamp: 2; word-break: break-all; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; }
 #contents .grid-wrapper .wrap .items .item .subs-1 { margin-top: 10px; font-size: 16px; letter-spacing: -0.25px; color: #454545; line-height: 24px; white-space: nowrap; word-break: break-all; overflow: hidden; text-overflow: ellipsis; }
@@ -445,6 +445,7 @@ h3 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; font-weight: 500; l
   #contents .grid-wrapper .wrap .items { justify-content: space-between; }
   #contents .grid-wrapper .wrap .items.swiper-items { margin-top: 34.72vw; }
   #contents .grid-wrapper .wrap .items .item { margin-bottom: 20px; width: calc((100% - 17px) / 2); margin-left: 0 !important; }
+  #contents .grid-wrapper .wrap .items .item img { height: 101px; }
   #contents .grid-wrapper .wrap .items .item.swiper-slide { display: block; }
   #contents .grid-wrapper .wrap .items .item .title { font-size: 16px; margin-top: 5px; }
   #contents .grid-wrapper .wrap .items .item .subs, #contents .grid-wrapper .wrap .items .item .subs1 { font-size: 14px; line-height: 20px; }
